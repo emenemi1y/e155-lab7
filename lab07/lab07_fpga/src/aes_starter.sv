@@ -109,8 +109,8 @@ endmodule
 /////////////////////////////////////////////
 module sbox_sync(
 	input		logic [7:0] a,
-	input	 	logic 			clk,
-	output 	logic [7:0] y);
+	input	 	logic 		clk,
+	output 		logic [7:0] y);
             
   // sbox implemented as a ROM
   // This module is synchronous and will be inferred using BRAMs (Block RAMs)
