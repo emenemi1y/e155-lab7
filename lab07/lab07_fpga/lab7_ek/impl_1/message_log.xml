@@ -321,12 +321,100 @@
             <Navigation>17</Navigation>
         </Message>
         <Message>
-            <ID>35901137</ID>
-            <Severity>4096</Severity>
-            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv(20): </Dynamic>
-            <Dynamic>xor</Dynamic>
-            <Navigation>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv</Navigation>
-            <Navigation>20</Navigation>
+            <ID>35921014</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd(4): </Dynamic>
+            <Dynamic>components</Dynamic>
+            <Navigation>c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>1</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/impl_1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/src/aes_starter.sv(6): </Dynamic>
+            <Dynamic>aes</Dynamic>
+            <Navigation>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/src/aes_starter.sv</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/src/aes_starter.sv(26): </Dynamic>
+            <Dynamic>aes_spi</Dynamic>
+            <Navigation>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/src/aes_starter.sv</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/src/aes_starter.sv(75): </Dynamic>
+            <Dynamic>aes_core</Dynamic>
+            <Navigation>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/src/aes_starter.sv</Navigation>
+            <Navigation>75</Navigation>
+        </Message>
+        <Message>
+            <ID>35002039</ID>
+            <Severity>1</Severity>
+        </Message>
+        <Message>
+            <ID>35811146</ID>
+            <Severity>1</Severity>
+            <Dynamic>spi/done_c</Dynamic>
+        </Message>
+        <Message>
+            <ID>35811146</ID>
+            <Severity>1</Severity>
+            <Dynamic>spi/cyphertext[127]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35811146</ID>
+            <Severity>1</Severity>
+            <Dynamic>spi/cyphertext[126]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35811146</ID>
+            <Severity>1</Severity>
+            <Dynamic>spi/cyphertext[125]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35811146</ID>
+            <Severity>1</Severity>
+            <Dynamic>spi/cyphertext[124]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35811146</ID>
+            <Severity>1</Severity>
+            <Dynamic>spi/cyphertext[123]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35811146</ID>
+            <Severity>1</Severity>
+            <Dynamic>spi/cyphertext[122]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35811146</ID>
+            <Severity>1</Severity>
+            <Dynamic>spi/cyphertext[121]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35811146</ID>
+            <Severity>1</Severity>
+            <Dynamic>spi/cyphertext[120]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35811146</ID>
+            <Severity>1</Severity>
+            <Dynamic>spi/cyphertext[119]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35811149</ID>
+            <Severity>1</Severity>
         </Message>
     </Task>
 </BaliMessageLog>

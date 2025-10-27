@@ -1,0 +1,1 @@
+C:/lscc/radiant/2024.2/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 393216 work.key_expansion_tb(fast) -quiet -auto_acc_if_foreign -work work +acc -allow_unnamed -o _opt -id 2-00be43e570c5-68feaddc-3c8-3690 +__design_bin_path+C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek +__betafsm

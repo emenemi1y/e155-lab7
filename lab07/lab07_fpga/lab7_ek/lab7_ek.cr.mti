@@ -1,0 +1,81 @@
+C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module aes
+-- Compiling module aes_spi
+-- Compiling module aes_core
+-- Compiling module sbox
+-- Compiling module sbox_sync
+-- Compiling module mixcolumns
+-- Compiling module mixcolumn
+-- Compiling module galoismult
+
+Top level modules:
+	aes
+	sbox
+	sbox_sync
+	mixcolumns
+
+} {} {}} C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_spi_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_spi_tb.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module testbench_aes_spi
+
+Top level modules:
+	testbench_aes_spi
+
+} {} {}} C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_sbox_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_sbox_tb.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module testbench_aes_sbox
+
+Top level modules:
+	testbench_aes_sbox
+
+} {} {}} C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SUBBYTES.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SUBBYTES.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module SUBBYTES
+
+Top level modules:
+	SUBBYTES
+
+} {} {}} C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module ROTWORD
+
+Top level modules:
+	ROTWORD
+
+} {} {}} C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module keyexpansion
+
+Top level modules:
+	keyexpansion
+
+} {} {}} C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/RCon.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/RCon.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module RCon
+
+Top level modules:
+	RCon
+
+} {} {}} C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD_tb.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module ROTWORD_tb
+
+Top level modules:
+	ROTWORD_tb
+
+} {} {}} C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_core_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_core_tb.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module testbench_aes_core
+
+Top level modules:
+	testbench_aes_core
+
+} {} {}} C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module keyexpansion_tb
+
+Top level modules:
+	keyexpansion_tb
+
+} {} {}}

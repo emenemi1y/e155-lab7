@@ -1,11 +1,66 @@
-O <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dq_be.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_dsp.v. VERI-1328
-Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/src/aes_core_tb.sv. VERI-1482
-Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/src/aes_sbox_tb.sv. VERI-1482
-Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/src/aes_spi_tb.sv. VERI-1482
-Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/src/aes_starter.sv. VERI-1482
-Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv. VERI-1482
-ERROR <35901137> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv(20): syntax error near xor. VERI-1137
 
-child process exited abnormally
+pnmainc -log pnmain "lab7_ek_impl_1_par.tcl"
+
+PAR: Place And Route Radiant Software (64-bit) 2024.2.0.3.0.
+PARed on: Sun Oct 26 15:45:05 2025
+
+Command Line: par -w -t 1 -cores 1 -hsp m -exp parPathBased=ON \
+	lab7_ek_impl_1_map.udb lab7_ek_impl_1_par.dir/5_1.udb 
+
+Loading lab7_ek_impl_1_map.udb ...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2024.2/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+
+
+
+Design:  aes
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+
+Constraint Summary
+   Total number of constraints: 0
+   Total number of constraints dropped: 0
+
+Number of Signals: 771
+Number of Connections: 1282
+Device utilization summary:
+
+   SLICE (est.)     194/2640          7% used
+     LUT            384/5280          7% used
+     REG            383/5280          7% used
+   PIO                6/56           11% used
+                      6/36           16% bonded
+   IOLOGIC            1/56            2% used
+   DSP                0/8             0% used
+   I2C                0/2             0% used
+   HFOSC              0/1             0% used
+   LFOSC              0/1             0% used
+   LEDDA_IP           0/1             0% used
+   RGBA_DRV           0/1             0% used
+   FILTER             0/2             0% used
+   SRAM               0/4             0% used
+   WARMBOOT           0/1             0% used
+   SPI                0/2             0% used
+   EBR                0/30            0% used
+   PLL                0/1             0% used
+   RGBOUTBUF          0/3             0% used
+   I3C                0/2             0% used
+   OPENDRAIN          0/3             0% used
+
+Pin Constraint Summary:
+   0 out of 6 pins locked (0% locked).
+.
+................ERROR - par: A fatal error occurred. The process will now exit.
+INTERNAL CODE : ic1pkpack1:ic1pkpack1.c:628:1.0
+For support, contact Lattice Semiconductor technical support at 1-800-LATTICE, or 503-268-8001, or techsupport@latticesemi.com.
+
+Finished Placer Phase 0 (HIER). CPU time: 0 secs , REAL time: 0 secs 
+
+
+.....
+Error: the command par_run failed.
+
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /49 secs 

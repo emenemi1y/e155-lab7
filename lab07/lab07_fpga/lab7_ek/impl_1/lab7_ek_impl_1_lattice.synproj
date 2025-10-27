@@ -53,7 +53,7 @@
 
 
 -path "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek"
--top SUBBYTES
+-top aes
 -udb "lab7_ek_impl_1_rtl.udb"
 -output_hdl "lab7_ek_impl_1.vm"
 

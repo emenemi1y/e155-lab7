@@ -1,0 +1,30 @@
+----------------------------------------------------------------------
+Report for cell aes.TECH
+Register bits:  384 of 5280 (7.273%)
+I/O cells:      6
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ       384          100.0
+                                 IB         4          100.0
+                                INV         1          100.0
+                              IOL_B         1          100.0
+                               LUT4       128          100.0
+                                 OB         2          100.0
+SUB MODULES
+                           aes_core         1
+                            aes_spi         1
+                              TOTAL       522
+----------------------------------------------------------------------
+Report for cell encrypted_cell.<NoName>
+Instance Path : encrypted_instance
+                              TOTAL         0
+----------------------------------------------------------------------
+Report for cell aes_spi.v1
+Instance Path : spi
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ       384          100.0
+                                INV         1          100.0
+                              IOL_B         1          100.0
+                               LUT4       128          100.0
+                              TOTAL       514
