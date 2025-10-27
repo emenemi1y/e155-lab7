@@ -6,22 +6,22 @@
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="0" build_time="1761518803">
-            <Task name="Map" build_result="0" update_result="2" update_time="1761518803"/>
+        <Milestone name="Map" build_result="0" build_time="1761589725">
+            <Task name="Map" build_result="0" update_result="2" update_time="1761589725"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="0" build_time="1761518803">
-            <Task name="PAR" build_result="0" update_result="2" update_time="1761518803"/>
+        <Milestone name="PAR" build_result="0" build_time="1761589725">
+            <Task name="PAR" build_result="0" update_result="2" update_time="1761589725"/>
             <Task name="PostParVM" build_result="0" update_result="3" update_time="0"/>
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="0" build_time="1761541620">
-            <Task name="Lattice_Synthesis" build_result="0" update_result="2" update_time="1761541620"/>
-            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1761541620"/>
-            <Task name="LSE_Lint" build_result="0" update_result="2" update_time="1761541620"/>
-            <Task name="SynTrace" build_result="0" update_result="2" update_time="1761541620"/>
-            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1761541620"/>
+        <Milestone name="Synthesis" build_result="0" build_time="1761589893">
+            <Task name="Lattice_Synthesis" build_result="0" update_result="2" update_time="1761589893"/>
+            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1761589893"/>
+            <Task name="LSE_Lint" build_result="0" update_result="2" update_time="1761589893"/>
+            <Task name="SynTrace" build_result="0" update_result="2" update_time="1761589893"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1761589893"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
             <Task name="HDLE" build_result="0" update_result="3" update_time="0"/>
@@ -32,8 +32,8 @@
         </Milestone>
         <Report name="lab7_ek_impl_1.lsedata" last_build_time="0" last_build_size="0"/>
         <Report name="lab7_ek_impl_1.udb" last_build_time="0" last_build_size="0"/>
-        <Report name="lab7_ek_impl_1_map.udb" last_build_time="1761518602" last_build_size="23654"/>
-        <Report name="lab7_ek_impl_1_rtl.udb" last_build_time="1761518593" last_build_size="19761"/>
-        <Report name="lab7_ek_impl_1_syn.udb" last_build_time="1761518593" last_build_size="12748"/>
+        <Report name="lab7_ek_impl_1_map.udb" last_build_time="1761589130" last_build_size="23699"/>
+        <Report name="lab7_ek_impl_1_rtl.udb" last_build_time="1761589121" last_build_size="19762"/>
+        <Report name="lab7_ek_impl_1_syn.udb" last_build_time="1761589121" last_build_size="12748"/>
     </Strategy>
 </BuildStatus>

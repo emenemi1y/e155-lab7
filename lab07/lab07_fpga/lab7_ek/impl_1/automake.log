@@ -2,7 +2,7 @@
 pnmainc -log pnmain "lab7_ek_impl_1_par.tcl"
 
 PAR: Place And Route Radiant Software (64-bit) 2024.2.0.3.0.
-PARed on: Sun Oct 26 15:45:05 2025
+PARed on: Mon Oct 27 11:18:59 2025
 
 Command Line: par -w -t 1 -cores 1 -hsp m -exp parPathBased=ON \
 	lab7_ek_impl_1_map.udb lab7_ek_impl_1_par.dir/5_1.udb 
@@ -63,4 +63,4 @@ Finished Placer Phase 0 (HIER). CPU time: 0 secs , REAL time: 0 secs
 .....
 Error: the command par_run failed.
 
-Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /49 secs 
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /7 secs 

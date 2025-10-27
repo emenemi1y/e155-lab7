@@ -24,36 +24,11 @@
 # Compile of aes_spi_tb.sv was successful.
 # Compile of aes_starter.sv was successful.
 # Compile of ROTWORD_tb.sv was successful.
-# Compile of SHIFTROWS.sv failed with 2 errors.
-# Compile of SHIFTROWS_tb.sv was successful.
-# 12 compiles, 1 failed with 2 errors.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_tb.sv was successful.
-# Compile of RCon.sv was successful.
-# Compile of ROTWORD.sv was successful.
-# Compile of SUBBYTES.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of aes_starter.sv was successful.
-# Compile of ROTWORD_tb.sv was successful.
 # Compile of SHIFTROWS.sv was successful.
 # Compile of SHIFTROWS_tb.sv was successful.
-# 12 compiles, 0 failed with no errors.
-vsim -gui work.SHIFTROWS_tb -voptargs=+acc
-# vsim -gui work.SHIFTROWS_tb -voptargs="+acc" 
-# Start time: 21:47:40 on Oct 26,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.SHIFTROWS_tb(fast)
-# Loading work.SHIFTROWS(fast)
-add wave -position insertpoint  \
-sim:/SHIFTROWS_tb/a \
-sim:/SHIFTROWS_tb/clk \
-sim:/SHIFTROWS_tb/y
-run 200
+# Compile of XTIMES.sv was successful.
+# Compile of XTIMES_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
 # Compile of keyexpansion.sv was successful.
 # Compile of keyexpansion_tb.sv was successful.
 # Compile of RCon.sv was successful.
@@ -68,20 +43,72 @@ run 200
 # Compile of SHIFTROWS_tb.sv was successful.
 # Compile of XTIMES.sv was successful.
 # Compile of XTIMES_tb.sv was successful.
-# 14 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.XTIMES_tb
-# End time: 22:12:02 on Oct 26,2025, Elapsed time: 0:24:22
-# Errors: 0, Warnings: 7
-# vsim -gui -voptargs="+acc" work.XTIMES_tb 
-# Start time: 22:12:02 on Oct 26,2025
+# Compile of MIXCOLUMNS.sv was successful.
+# Compile of MIXCOLUMNS_tb.sv was successful.
+# 16 compiles, 0 failed with no errors.
+vsim -gui work.MIXCOLUMNS_tb -voptargs=+acc
+# vsim -gui work.MIXCOLUMNS_tb -voptargs="+acc" 
+# Start time: 11:06:50 on Oct 27,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
-# Loading work.XTIMES_tb(fast)
+# Loading work.MIXCOLUMNS_tb(fast)
+# Loading work.MIXCOLUMNS(fast)
 # Loading work.XTIMES(fast)
 add wave -position insertpoint  \
-sim:/XTIMES_tb/clk \
-sim:/XTIMES_tb/in \
-sim:/XTIMES_tb/out
+sim:/MIXCOLUMNS_tb/a \
+sim:/MIXCOLUMNS_tb/y \
+sim:/MIXCOLUMNS_tb/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ekendrick  Hostname: 6CJZ0R3  ProcessID: 10696
+#           Attempting to use alternate WLF file "./wlft89mzm0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft89mzm0
 run 200
+# ** Error: test 1 output word = d4bf5d30e0b452aeb84111f11e2798e5, rotword = XxXxXxbdfed520c417a7b2643c121aXx, exp = 046681e5e0cb199a48f8d37a2806264c
+#    Time: 10 ns  Scope: MIXCOLUMNS_tb File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS_tb.sv Line: 18
+# ** Error: test 1 output word = 49db873b453953897f02d2f177de961a, rotword = XxXxXxd3297917d8a39fc2a8700096Xx, exp = 584dcaf11b4b5aacdbe7caa81b6bb0e5
+#    Time: 30 ns  Scope: MIXCOLUMNS_tb File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS_tb.sv Line: 22
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.MIXCOLUMNS_tb(fast)
+# Loading work.MIXCOLUMNS(fast)
+# Loading work.XTIMES(fast)
+run 200
+# ** Error: test 1 output word = d4bf5d30e0b452aeb84111f11e2798e5, rotword = XxXxXxbdfed520c417a7b2643c121aXx, exp = 046681e5e0cb199a48f8d37a2806264c
+#    Time: 10 ns  Scope: MIXCOLUMNS_tb File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS_tb.sv Line: 18
+# ** Error: test 1 output word = 49db873b453953897f02d2f177de961a, rotword = XxXxXxd3297917d8a39fc2a8700096Xx, exp = 584dcaf11b4b5aacdbe7caa81b6bb0e5
+#    Time: 30 ns  Scope: MIXCOLUMNS_tb File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS_tb.sv Line: 22
+# Compile of keyexpansion.sv was successful.
+# Compile of keyexpansion_tb.sv was successful.
+# Compile of RCon.sv was successful.
+# Compile of ROTWORD.sv was successful.
+# Compile of SUBBYTES.sv was successful.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of ROTWORD_tb.sv was successful.
+# Compile of SHIFTROWS.sv was successful.
+# Compile of SHIFTROWS_tb.sv was successful.
+# Compile of XTIMES.sv was successful.
+# Compile of XTIMES_tb.sv was successful.
+# Compile of MIXCOLUMNS.sv was successful.
+# Compile of MIXCOLUMNS_tb.sv was successful.
+# 16 compiles, 0 failed with no errors.
+# Load canceled
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.MIXCOLUMNS_tb(fast)
+# Loading work.MIXCOLUMNS(fast)
+# Loading work.XTIMES(fast)
+run 200
+# End time: 11:37:40 on Oct 27,2025, Elapsed time: 0:30:50
+# Errors: 0, Warnings: 2
