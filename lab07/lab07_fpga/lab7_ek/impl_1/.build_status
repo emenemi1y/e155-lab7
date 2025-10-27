@@ -16,12 +16,12 @@
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="0" build_time="1761522535">
-            <Task name="Lattice_Synthesis" build_result="0" update_result="2" update_time="1761522535"/>
-            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1761522535"/>
-            <Task name="LSE_Lint" build_result="0" update_result="2" update_time="1761522535"/>
-            <Task name="SynTrace" build_result="0" update_result="2" update_time="1761522535"/>
-            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1761522535"/>
+        <Milestone name="Synthesis" build_result="0" build_time="1761541620">
+            <Task name="Lattice_Synthesis" build_result="0" update_result="2" update_time="1761541620"/>
+            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1761541620"/>
+            <Task name="LSE_Lint" build_result="0" update_result="2" update_time="1761541620"/>
+            <Task name="SynTrace" build_result="0" update_result="2" update_time="1761541620"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1761541620"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
             <Task name="HDLE" build_result="0" update_result="3" update_time="0"/>

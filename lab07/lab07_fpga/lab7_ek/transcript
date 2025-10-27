@@ -17,42 +17,43 @@
 # Compile of keyexpansion.sv was successful.
 # Compile of keyexpansion_tb.sv was successful.
 # Compile of RCon.sv was successful.
-# Compile of ROTWORD.sv failed with 1 errors.
-# Compile of SUBBYTES.sv was successful.
-# Compile of SUBWORD.sv failed with 1 errors.
-# 6 compiles, 2 failed with 2 errors.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_tb.sv was successful.
-# Compile of RCon.sv was successful.
 # Compile of ROTWORD.sv was successful.
 # Compile of SUBBYTES.sv was successful.
-# Compile of SUBWORD.sv failed with 1 errors.
-# 6 compiles, 1 failed with 1 error.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_tb.sv was successful.
-# Compile of RCon.sv was successful.
-# Compile of ROTWORD.sv was successful.
-# Compile of SUBBYTES.sv was successful.
-# Compile of SUBWORD.sv failed with 1 errors.
 # Compile of aes_core_tb.sv was successful.
 # Compile of aes_sbox_tb.sv was successful.
 # Compile of aes_spi_tb.sv was successful.
 # Compile of aes_starter.sv was successful.
-# 10 compiles, 1 failed with 1 error.
-vsim -gui work.key_expansion_tb -voptargs=+acc
-# vsim -gui work.key_expansion_tb -voptargs="+acc" 
-# Start time: 16:23:34 on Oct 26,2025
+# Compile of ROTWORD_tb.sv was successful.
+# Compile of SHIFTROWS.sv failed with 2 errors.
+# Compile of SHIFTROWS_tb.sv was successful.
+# 12 compiles, 1 failed with 2 errors.
+# Compile of keyexpansion.sv was successful.
+# Compile of keyexpansion_tb.sv was successful.
+# Compile of RCon.sv was successful.
+# Compile of ROTWORD.sv was successful.
+# Compile of SUBBYTES.sv was successful.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of ROTWORD_tb.sv was successful.
+# Compile of SHIFTROWS.sv was successful.
+# Compile of SHIFTROWS_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.SHIFTROWS_tb -voptargs=+acc
+# vsim -gui work.SHIFTROWS_tb -voptargs="+acc" 
+# Start time: 21:47:40 on Oct 26,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
-# Loading work.key_expansion_tb(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.RCon(fast)
-# Loading work.ROTWORD(fast)
-# Loading work.sbox_sync(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/RCon.sv(1).
-#    Time: 0 ns  Iteration: 0  Instance: /key_expansion_tb/ke/constant File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv Line: 8
+# Loading work.SHIFTROWS_tb(fast)
+# Loading work.SHIFTROWS(fast)
+add wave -position insertpoint  \
+sim:/SHIFTROWS_tb/a \
+sim:/SHIFTROWS_tb/clk \
+sim:/SHIFTROWS_tb/y
+run 200
 # Compile of keyexpansion.sv was successful.
 # Compile of keyexpansion_tb.sv was successful.
 # Compile of RCon.sv was successful.
@@ -62,308 +63,25 @@ vsim -gui work.key_expansion_tb -voptargs=+acc
 # Compile of aes_sbox_tb.sv was successful.
 # Compile of aes_spi_tb.sv was successful.
 # Compile of aes_starter.sv was successful.
-# 9 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.key_expansion_tb(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.RCon(fast)
-# Loading work.ROTWORD(fast)
-# Loading work.sbox_sync(fast)
-vsim -gui -voptargs=+acc work.keyexpansion_tb
-# End time: 16:25:41 on Oct 26,2025, Elapsed time: 0:02:07
-# Errors: 0, Warnings: 2
-# vsim -gui -voptargs="+acc" work.keyexpansion_tb 
-# Start time: 16:25:41 on Oct 26,2025
+# Compile of ROTWORD_tb.sv was successful.
+# Compile of SHIFTROWS.sv was successful.
+# Compile of SHIFTROWS_tb.sv was successful.
+# Compile of XTIMES.sv was successful.
+# Compile of XTIMES_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.XTIMES_tb
+# End time: 22:12:02 on Oct 26,2025, Elapsed time: 0:24:22
+# Errors: 0, Warnings: 7
+# vsim -gui -voptargs="+acc" work.XTIMES_tb 
+# Start time: 22:12:02 on Oct 26,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
-# Loading work.keyexpansion_tb(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.RCon(fast)
-# Loading work.ROTWORD(fast)
-# Loading work.sbox_sync(fast)
+# Loading work.XTIMES_tb(fast)
+# Loading work.XTIMES(fast)
 add wave -position insertpoint  \
-sim:/keyexpansion_tb/clk \
-sim:/keyexpansion_tb/new_key \
-sim:/keyexpansion_tb/prev_key \
-sim:/keyexpansion_tb/round
+sim:/XTIMES_tb/clk \
+sim:/XTIMES_tb/in \
+sim:/XTIMES_tb/out
 run 200
-# ** Warning: (vsim-7) Failed to open readmem file "sbox.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(119)
-#    Time: 0 ns  Iteration: 0  Instance: /keyexpansion_tb/ke/sb[0]
-# ** Warning: (vsim-7) Failed to open readmem file "sbox.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(119)
-#    Time: 0 ns  Iteration: 0  Instance: /keyexpansion_tb/ke/sb[1]
-# ** Warning: (vsim-7) Failed to open readmem file "sbox.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(119)
-#    Time: 0 ns  Iteration: 0  Instance: /keyexpansion_tb/ke/sb[2]
-# ** Warning: (vsim-7) Failed to open readmem file "sbox.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(119)
-#    Time: 0 ns  Iteration: 0  Instance: /keyexpansion_tb/ke/sb[3]
-# ** Error: test 1 output prev_key = 00101011011111100001010100010110001010001010111011010010101001101010101111110111000101011000100000001001110011110100111100111100, new_key = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-#    Time: 5 ns  Scope: keyexpansion_tb File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv Line: 20
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_tb.sv was successful.
-# Compile of RCon.sv was successful.
-# Compile of ROTWORD.sv was successful.
-# Compile of SUBBYTES.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of aes_starter.sv was successful.
-# 9 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.keyexpansion_tb(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.RCon(fast)
-# Loading work.ROTWORD(fast)
-# Loading work.sbox_sync(fast)
-run 200
-# ** Warning: (vsim-7) Failed to open readmem file "sbox.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(119)
-#    Time: 0 ns  Iteration: 0  Instance: /keyexpansion_tb/ke/sb[0]
-# ** Warning: (vsim-7) Failed to open readmem file "sbox.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(119)
-#    Time: 0 ns  Iteration: 0  Instance: /keyexpansion_tb/ke/sb[1]
-# ** Warning: (vsim-7) Failed to open readmem file "sbox.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(119)
-#    Time: 0 ns  Iteration: 0  Instance: /keyexpansion_tb/ke/sb[2]
-# ** Warning: (vsim-7) Failed to open readmem file "sbox.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(119)
-#    Time: 0 ns  Iteration: 0  Instance: /keyexpansion_tb/ke/sb[3]
-# ** Error: test 1 output prev_key = 00101011011111100001010100010110001010001010111011010010101001101010101111110111000101011000100000001001110011110100111100111100, new_key = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-#    Time: 5 ns  Scope: keyexpansion_tb File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv Line: 20
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_tb.sv was successful.
-# Compile of RCon.sv was successful.
-# Compile of ROTWORD.sv was successful.
-# Compile of SUBBYTES.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of aes_starter.sv was successful.
-# 9 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.keyexpansion_tb(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.RCon(fast)
-# Loading work.ROTWORD(fast)
-# Loading work.sbox_sync(fast)
-run 200
-# ** Error: test 1 output prev_key = 00101011011111100001010100010110001010001010111011010010101001101010101111110111000101011000100000001001110011110100111100111100, new_key = 11111001000110110110110001000011110100100110010101111001010101011111101011001011101010111111001101010001001111001011111001111011
-#    Time: 5 ns  Scope: keyexpansion_tb File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv Line: 20
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_tb.sv was successful.
-# Compile of RCon.sv was successful.
-# Compile of ROTWORD.sv was successful.
-# Compile of SUBBYTES.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of aes_starter.sv was successful.
-# 9 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.keyexpansion_tb(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.RCon(fast)
-# Loading work.ROTWORD(fast)
-# Loading work.sbox_sync(fast)
-run 200
-# ** Error: test 1 output prev_key = 2b7e151628aed2a6abf7158809cf4f3c, new_key = f91b6c43d2657955facbabf3513cbe7b, exp = a0fafe1788542cb123a339392a6c7605
-#    Time: 5 ns  Scope: keyexpansion_tb File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv Line: 20
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_tb.sv was successful.
-# Compile of RCon.sv was successful.
-# Compile of ROTWORD.sv was successful.
-# Compile of SUBBYTES.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of aes_starter.sv was successful.
-# Compile of ROTWORD_tb.sv was successful.
-# 10 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.ROTWORD_tb
-# End time: 16:54:23 on Oct 26,2025, Elapsed time: 0:28:42
-# Errors: 1, Warnings: 4
-# vsim -gui -voptargs="+acc" work.ROTWORD_tb 
-# Start time: 16:54:23 on Oct 26,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.ROTWORD_tb(fast)
-# Loading work.ROTWORD(fast)
-add wave -position insertpoint  \
-sim:/ROTWORD_tb/clk \
-sim:/ROTWORD_tb/rotword \
-sim:/ROTWORD_tb/word
-run 200
-# ** Error: test 1 output word = 09cf4f3c, rotword = 4fcf093c, exp = cf4f3c09
-#    Time: 10 ns  Scope: ROTWORD_tb File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD_tb.sv Line: 17
-# ** Error: test 1 output word = 2a6c7605, rotword = 766c2a05, exp = 6c76052a
-#    Time: 30 ns  Scope: ROTWORD_tb File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD_tb.sv Line: 21
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_tb.sv was successful.
-# Compile of RCon.sv was successful.
-# Compile of ROTWORD.sv was successful.
-# Compile of SUBBYTES.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of aes_starter.sv was successful.
-# Compile of ROTWORD_tb.sv was successful.
-# 10 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.ROTWORD_tb(fast)
-# Loading work.ROTWORD(fast)
-run 200
-# ** Error: test 1 output word = 09cf4f3c, rotword = cf4f3c09, exp = cf4f3c09
-#    Time: 10 ns  Scope: ROTWORD_tb File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD_tb.sv Line: 17
-# ** Error: test 1 output word = 2a6c7605, rotword = 6c76052a, exp = 6c76052a
-#    Time: 30 ns  Scope: ROTWORD_tb File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD_tb.sv Line: 21
-# Optimization canceled
-vsim -gui -voptargs=+acc work.keyexpansion_tb
-# End time: 17:01:17 on Oct 26,2025, Elapsed time: 0:06:54
-# Errors: 2, Warnings: 2
-# vsim -gui -voptargs="+acc" work.keyexpansion_tb 
-# Start time: 17:01:17 on Oct 26,2025
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.keyexpansion_tb(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.RCon(fast)
-# Loading work.ROTWORD(fast)
-# Loading work.sbox_sync(fast)
-add wave -position insertpoint  \
-sim:/keyexpansion_tb/clk \
-sim:/keyexpansion_tb/new_key \
-sim:/keyexpansion_tb/prev_key \
-sim:/keyexpansion_tb/round
-run 200
-# ** Error: test 1 output prev_key = 2b7e151628aed2a6abf7158809cf4f3c, new_key = 53b1daf578cfcfe350611d45fb9608cd, exp = a0fafe1788542cb123a339392a6c7605
-#    Time: 5 ns  Scope: keyexpansion_tb File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv Line: 20
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_tb.sv was successful.
-# Compile of RCon.sv was successful.
-# Compile of ROTWORD.sv was successful.
-# Compile of SUBBYTES.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of aes_starter.sv was successful.
-# Compile of ROTWORD_tb.sv was successful.
-# 10 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.keyexpansion_tb(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.RCon(fast)
-# Loading work.ROTWORD(fast)
-# Loading work.sbox_sync(fast)
-run 200
-# ** Error: test 1 output prev_key = 2b7e151628aed2a6abf7158809cf4f3c, new_key = 53b1daf578cfcfe350611d45fb9608cd, exp = a0fafe1788542cb123a339392a6c7605
-#    Time: 5 ns  Scope: keyexpansion_tb File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv Line: 20
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_tb.sv was successful.
-# Compile of RCon.sv was successful.
-# Compile of ROTWORD.sv was successful.
-# Compile of SUBBYTES.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of aes_starter.sv was successful.
-# Compile of ROTWORD_tb.sv was successful.
-# 10 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.keyexpansion_tb(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.RCon(fast)
-# Loading work.ROTWORD(fast)
-# Loading work.sbox_sync(fast)
-run 200
-# ** Error: test 1 output prev_key = 2b7e151628aed2a6abf7158809cf4f3c, new_key = 53b1daf578cfcfe350611d45fb9608cd, exp = a0fafe1788542cb123a339392a6c7605
-#    Time: 24 ns  Scope: keyexpansion_tb File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv Line: 21
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.keyexpansion_tb(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.RCon(fast)
-# Loading work.ROTWORD(fast)
-# Loading work.sbox_sync(fast)
-run 200
-# ** Error: test 1 output prev_key = 2b7e151628aed2a6abf7158809cf4f3c, new_key = 53b1daf578cfcfe350611d45fb9608cd, exp = a0fafe1788542cb123a339392a6c7605
-#    Time: 24 ns  Scope: keyexpansion_tb File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv Line: 21
-add wave -position insertpoint  \
-sim:/keyexpansion_tb/ke/rot/rotword
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.keyexpansion_tb(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.RCon(fast)
-# Loading work.ROTWORD(fast)
-# Loading work.sbox_sync(fast)
-run 200
-# ** Error: test 1 output prev_key = 2b7e151628aed2a6abf7158809cf4f3c, new_key = 53b1daf578cfcfe350611d45fb9608cd, exp = a0fafe1788542cb123a339392a6c7605
-#    Time: 24 ns  Scope: keyexpansion_tb File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv Line: 21
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_tb.sv was successful.
-# Compile of RCon.sv was successful.
-# Compile of ROTWORD.sv was successful.
-# Compile of SUBBYTES.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of aes_starter.sv was successful.
-# Compile of ROTWORD_tb.sv was successful.
-# 10 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.keyexpansion_tb(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.RCon(fast)
-# Loading work.ROTWORD(fast)
-# Loading work.sbox_sync(fast)
-run 200
-# End time: 17:12:06 on Oct 26,2025, Elapsed time: 0:10:49
-# Errors: 0, Warnings: 2
