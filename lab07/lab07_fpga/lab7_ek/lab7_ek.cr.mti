@@ -1,9 +1,40 @@
-C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv
+C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype_tb.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module keyexpansion_seq_tb
+
+Top level modules:
+	keyexpansion_seq_tb
+
+} {} {}} C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module aes
+-- Compiling module aes_spi
+-- Compiling module aes_core
+-- Compiling module sbox
+-- Compiling module sbox_sync
+-- Compiling module mixcolumns
+-- Compiling module mixcolumn
+-- Compiling module galoismult
+
+Top level modules:
+	aes
+	sbox
+	sbox_sync
+
+} {} {}} C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module keyexpansion
 
 Top level modules:
 	keyexpansion
+
+} {} {}} C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module aes128_keyexp_seq
+-- Compiling module SUBWORD
+
+Top level modules:
+	aes128_keyexp_seq
 
 } {} {}} C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_sbox_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_sbox_tb.sv
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
@@ -74,6 +105,13 @@ Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 
 Top level modules:
 	XTIMES_tb
+
+} {} {}} C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/CIPHER_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/CIPHER_tb.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module CIPHER_tb
+
+Top level modules:
+	CIPHER_tb
 
 } {} {}} C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SHIFTROWS.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SHIFTROWS.sv
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024

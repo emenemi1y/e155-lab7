@@ -7,9 +7,9 @@
 /////////////////////////////////////////////
 
 module CIPHER_tb();
-	input logic [3:0] round;
-	input logic reset, clk, load, cipherComplete, incrementRound, keyUpdate;
-	output logic [3:0] operation;
+	logic [3:0] round;
+	logic reset, clk, load, cipherComplete, incrementRound, keyUpdate;
+	logic [3:0] operation;
 	
 	CIPHER dut(round, reset, clk, load, cipherComplete, incrementRound, keyUpdate, operation);
 	
@@ -21,9 +21,16 @@ module CIPHER_tb();
 	
 	initial begin
 		#12;
-		prev_key = 128'h2b7e151628aed2a6abf7158809cf4f3c; 
+		load = 1'b1;
+		round = 4'b1;
+		reset = 1;
 		round = 1; #12;
-		assert(new_key == 128'ha0fafe1788542cb123a339392a6c7605) else $error("test 1 output prev_key = %h, new_key = %h, exp = %h", prev_key, new_key, 128'ha0fafe1788542cb123a339392a6c7605); #10;
+		
+		load = 1'b0;
+		round = 4'b1;
+		#100;
+		round = 4'd10;
+		#12;
 			
 	end
 endmodule

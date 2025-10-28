@@ -369,18 +369,18 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/cipher.sv(1): </Dynamic>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/cipher.sv(15): </Dynamic>
             <Dynamic>CIPHER</Dynamic>
             <Navigation>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/cipher.sv</Navigation>
-            <Navigation>1</Navigation>
+            <Navigation>15</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/subbytes.sv(1): </Dynamic>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/subbytes.sv(9): </Dynamic>
             <Dynamic>SUBBYTES</Dynamic>
             <Navigation>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/subbytes.sv</Navigation>
-            <Navigation>1</Navigation>
+            <Navigation>9</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -401,10 +401,10 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/shiftrows.sv(1): </Dynamic>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/shiftrows.sv(10): </Dynamic>
             <Dynamic>SHIFTROWS</Dynamic>
             <Navigation>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/shiftrows.sv</Navigation>
-            <Navigation>1</Navigation>
+            <Navigation>10</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -433,26 +433,26 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv(1): </Dynamic>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv(9): </Dynamic>
             <Dynamic>keyexpansion</Dynamic>
             <Navigation>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv</Navigation>
-            <Navigation>1</Navigation>
+            <Navigation>9</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/rcon.sv(1): </Dynamic>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/rcon.sv(9): </Dynamic>
             <Dynamic>RCon</Dynamic>
             <Navigation>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/rcon.sv</Navigation>
-            <Navigation>1</Navigation>
+            <Navigation>9</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/rotword.sv(1): </Dynamic>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/rotword.sv(10): </Dynamic>
             <Dynamic>ROTWORD</Dynamic>
             <Navigation>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/rotword.sv</Navigation>
-            <Navigation>1</Navigation>
+            <Navigation>10</Navigation>
         </Message>
         <Message>
             <ID>35931038</ID>

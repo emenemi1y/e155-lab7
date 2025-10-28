@@ -85,7 +85,7 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="134" useTextEdit="1" path="../src/lab7.c" left="0" selected="1" top="112" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="38" y="30" useTextEdit="1" path="../src/lab7.c" left="0" selected="1" top="6" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="26" y="19" useTextEdit="1" path="../lib/STM32L432KC.h" left="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="44" useTextEdit="1" openedFrom="/Users/joshbrake/dev/E155FA22/labs/lab07/lab07_mcu/src/lab7.c" path="../lib/STM32L432KC_SPI.c" left="0" top="10" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="19" y="13" useTextEdit="1" openedFrom="/Users/joshbrake/dev/E155FA22/labs/lab07/lab07_mcu/lib/STM32L432KC_SPI.c" path="../lib/STM32L432KC_SPI.h" left="0" top="0" codecName="Default"/>

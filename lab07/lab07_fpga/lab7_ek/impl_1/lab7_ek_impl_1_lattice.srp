@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Oct 28 11:39:18 2025
+Tue Oct 28 16:09:48 2025
 
 
 Command Line:  C:\lscc\radiant\2024.2\ispfpga\bin\nt64\synthesis.exe -f C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/impl_1/lab7_ek_impl_1_lattice.synproj -logfile lab7_ek_impl_1_lattice.srp -gui -msgset C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/promote.xml 
@@ -121,6 +121,7 @@ Verilog design file: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_f
 Verilog design file: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/XTIMES.sv
 Verilog design file: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv
 Verilog design file: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/CIPHER.sv
+Verilog design file: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype.sv
 VHDL library: pmi
 VHDL design file: C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.vhd
 WARNING <35935050> - synthesis: input port TRIM9 is not connected on this instance. VDB-5050
@@ -179,6 +180,7 @@ Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07
 Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/xtimes.sv. VERI-1482
 Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv. VERI-1482
 Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/cipher.sv. VERI-1482
+Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ai_prototype.sv. VERI-1482
 Analyzing VHDL file c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd. VHDL-1481
 Analyzing VHDL file c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd
 
@@ -190,17 +192,17 @@ INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07
 INFO <35901018> - synthesis: C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): compiling module HSOSC(CLKHF_DIV=2'b01). VERI-1018
 INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(31): compiling module aes_spi. VERI-1018
 INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(80): compiling module aes_core. VERI-1018
-INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/cipher.sv(1): compiling module CIPHER. VERI-1018
-INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/subbytes.sv(1): compiling module SUBBYTES. VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/cipher.sv(15): compiling module CIPHER. VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/subbytes.sv(9): compiling module SUBBYTES. VERI-1018
 INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(181): compiling module sbox_sync. VERI-1018
 WARNING <35931002> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(188): net sbox does not have a driver. VDB-1002
-INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/shiftrows.sv(1): compiling module SHIFTROWS. VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/shiftrows.sv(10): compiling module SHIFTROWS. VERI-1018
 INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(205): compiling module mixcolumns. VERI-1018
 INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(221): compiling module mixcolumn. VERI-1018
 INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(248): compiling module galoismult. VERI-1018
-INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv(1): compiling module keyexpansion. VERI-1018
-INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/rcon.sv(1): compiling module RCon. VERI-1018
-INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/rotword.sv(1): compiling module ROTWORD. VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv(9): compiling module keyexpansion. VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/rcon.sv(9): compiling module RCon. VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/rotword.sv(10): compiling module ROTWORD. VERI-1018
 [Parameter Setting Section Start]
 
 	[Parameter Settings for Instance(s): hf_osc]
@@ -326,10 +328,10 @@ Constraint Summary:
   Total number of constraints dropped: 0
 ###################  End Constraint Report  ######################
 
-Peak Memory Usage: 118 MB
+Peak Memory Usage: 117 MB
 
 --------------------------------------------------------------
 Total CPU Time: 7 secs 
 Total REAL Time: 13 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: d9b7895c9eb7e53f470a2d72d61c6a8691a8ccb4
+Checksum -- synthesis -- netlist: 1e294e934542adc4f9c7d4f4288c21baaff19a8

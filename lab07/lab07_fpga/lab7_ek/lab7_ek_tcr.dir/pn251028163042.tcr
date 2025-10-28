@@ -1,0 +1,12 @@
+#Start recording tcl command: 10/28/2025 14:50:06
+#Project Location: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek; Project name: lab7_ek
+prj_open "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/lab7_ek.rdf"
+prj_add_source "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype.sv"
+prj_add_source "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype_tb.sv"
+prj_disable_source "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype_tb.sv"
+prj_disable_source "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype.sv"
+prj_enable_source "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_disable_source "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype.sv"
+#Stop recording: 10/28/2025 16:30:42

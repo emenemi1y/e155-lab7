@@ -31,111 +31,11 @@
 # Compile of MIXCOLUMNS.sv was successful.
 # Compile of MIXCOLUMNS_tb.sv was successful.
 # Compile of CIPHER.sv was successful.
-# 17 compiles, 0 failed with no errors.
-vsim -gui work.aes_core_tb -voptargs=+acc
-# vsim -gui work.aes_core_tb -voptargs="+acc" 
-# Start time: 12:55:49 on Oct 28,2025
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vopt-143) Recognized 1 FSM in module "aes_core(fast)".
-# ** Note: (vopt-143) Recognized 1 FSM in module "CIPHER(fast)".
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.aes_core_tb(fast)
-# Loading work.aes_core(fast)
-# Loading work.CIPHER(fast)
-# Loading work.SUBBYTES(fast)
-# Loading work.SHIFTROWS(fast)
-# Loading work.mixcolumns(fast)
-# Loading work.mixcolumn(fast)
-# Loading work.galoismult(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.RCon(fast)
-# Loading work.ROTWORD(fast)
-# Loading work.sbox_sync(fast)
-add wave -position insertpoint  \
-sim:/aes_core_tb/clk \
-sim:/aes_core_tb/cyphertext \
-sim:/aes_core_tb/done \
-sim:/aes_core_tb/expected \
-sim:/aes_core_tb/key \
-sim:/aes_core_tb/load \
-sim:/aes_core_tb/plaintext
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: ekendrick  Hostname: 6CJZ0R3  ProcessID: 10696
-#           Attempting to use alternate WLF file "./wlftaqxv7i".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftaqxv7i
-run 10000
-# Testbench ran successfully
-# ** Note: $stop    : C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_core_tb.sv(48)
-#    Time: 7450 ns  Iteration: 1  Instance: /aes_core_tb
-# Break in Module aes_core_tb at C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_core_tb.sv line 48
-vsim -gui -voptargs=+acc work.key_expansion_tb
-# End time: 12:57:55 on Oct 28,2025, Elapsed time: 0:02:06
-# Errors: 0, Warnings: 5
-# vsim -gui -voptargs="+acc" work.key_expansion_tb 
-# Start time: 12:57:55 on Oct 28,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.key_expansion_tb(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.RCon(fast)
-# Loading work.ROTWORD(fast)
-# Loading work.sbox_sync(fast)
-add wave -position insertpoint  \
-sim:/key_expansion_tb/clk \
-sim:/key_expansion_tb/new_key \
-sim:/key_expansion_tb/prev_key \
-sim:/key_expansion_tb/round
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: ekendrick  Hostname: 6CJZ0R3  ProcessID: 10696
-#           Attempting to use alternate WLF file "./wlft41sa3v".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft41sa3v
-run 10000
-vsim -gui -voptargs=+acc work.ROTWORD_tb
-# End time: 12:59:31 on Oct 28,2025, Elapsed time: 0:01:36
-# Errors: 0, Warnings: 4
-# vsim -gui -voptargs="+acc" work.ROTWORD_tb 
-# Start time: 12:59:31 on Oct 28,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.ROTWORD_tb(fast)
-# Loading work.ROTWORD(fast)
-add wave -position insertpoint  \
-sim:/ROTWORD_tb/clk \
-sim:/ROTWORD_tb/rotword \
-sim:/ROTWORD_tb/word
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: ekendrick  Hostname: 6CJZ0R3  ProcessID: 10696
-#           Attempting to use alternate WLF file "./wlftg3i9wk".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftg3i9wk
-# Causality operation skipped due to absence of debug database file
-run 10000
-# ** Error: test 1 output word = 09cf4f3c, rotword = cf4f3c09, exp = cf4f3c09
-#    Time: 10 ns  Scope: ROTWORD_tb File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD_tb.sv Line: 25
-# ** Error: test 1 output word = 2a6c7605, rotword = 6c76052a, exp = 6c76052a
-#    Time: 30 ns  Scope: ROTWORD_tb File: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD_tb.sv Line: 29
-vsim -gui -voptargs=+acc work.testbench_aes_spi
-# End time: 13:01:18 on Oct 28,2025, Elapsed time: 0:01:47
-# Errors: 2, Warnings: 4
-# vsim -gui -voptargs="+acc" work.testbench_aes_spi 
-# Start time: 13:01:18 on Oct 28,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Error: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(15): Module 'HSOSC' is not defined.
-#  For instance 'hf_osc' at path 'testbench_aes_spi.dut'
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
-# Error loading design
-# End time: 13:01:18 on Oct 28,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 2
+# Compile of AI_Prototype_tb.sv was successful.
+# Compile of AI_Prototype.sv was successful.
+# 19 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of CIPHER_tb.sv failed with 8 errors.
 # Compile of keyexpansion.sv was successful.
 # Compile of keyexpansion_tb.sv was successful.
 # Compile of RCon.sv was successful.
@@ -153,76 +53,148 @@ vsim -gui -voptargs=+acc work.testbench_aes_spi
 # Compile of MIXCOLUMNS.sv was successful.
 # Compile of MIXCOLUMNS_tb.sv was successful.
 # Compile of CIPHER.sv was successful.
-# 17 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.SHIFTROWS_tb
-# vsim -gui -voptargs="+acc" work.SHIFTROWS_tb 
-# Start time: 13:02:01 on Oct 28,2025
+# Compile of AI_Prototype_tb.sv was successful.
+# Compile of AI_Prototype.sv was successful.
+# Compile of CIPHER_tb.sv was successful.
+# 20 compiles, 0 failed with no errors.
+vsim -gui work.CIPHER_tb -voptargs=+acc
+# vsim -gui work.CIPHER_tb -voptargs="+acc" 
+# Start time: 15:53:15 on Oct 28,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.SHIFTROWS_tb(fast)
-# Loading work.SHIFTROWS(fast)
-add wave -position insertpoint  \
-sim:/SHIFTROWS_tb/a \
-sim:/SHIFTROWS_tb/clk \
-sim:/SHIFTROWS_tb/y
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: ekendrick  Hostname: 6CJZ0R3  ProcessID: 10696
-#           Attempting to use alternate WLF file "./wlft7v55x7".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft7v55x7
-run 10000
-vsim -gui -voptargs=+acc work.testbench_aes_spi
-# End time: 13:03:40 on Oct 28,2025, Elapsed time: 0:01:39
-# Errors: 0, Warnings: 5
-# vsim -gui -voptargs="+acc" work.testbench_aes_spi 
-# Start time: 13:03:40 on Oct 28,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vopt-143) Recognized 1 FSM in module "aes_core(fast)".
 # ** Note: (vopt-143) Recognized 1 FSM in module "CIPHER(fast)".
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
-# Loading work.testbench_aes_spi(fast)
-# Loading work.aes(fast)
-# Loading work.aes_spi(fast)
-# Loading work.aes_core(fast)
+# Loading work.CIPHER_tb(fast)
 # Loading work.CIPHER(fast)
-# Loading work.SUBBYTES(fast)
-# Loading work.SHIFTROWS(fast)
-# Loading work.mixcolumns(fast)
-# Loading work.mixcolumn(fast)
-# Loading work.galoismult(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.RCon(fast)
-# Loading work.ROTWORD(fast)
-# Loading work.sbox_sync(fast)
 add wave -position insertpoint  \
-sim:/testbench_aes_spi/clk \
-sim:/testbench_aes_spi/comb \
-sim:/testbench_aes_spi/cyphertext \
-sim:/testbench_aes_spi/delay \
-sim:/testbench_aes_spi/done \
-sim:/testbench_aes_spi/expected \
-sim:/testbench_aes_spi/i \
-sim:/testbench_aes_spi/key \
-sim:/testbench_aes_spi/load \
-sim:/testbench_aes_spi/plaintext \
-sim:/testbench_aes_spi/sck \
-sim:/testbench_aes_spi/sdi \
-sim:/testbench_aes_spi/sdo
+sim:/CIPHER_tb/cipherComplete \
+sim:/CIPHER_tb/clk \
+sim:/CIPHER_tb/incrementRound \
+sim:/CIPHER_tb/keyUpdate \
+sim:/CIPHER_tb/load \
+sim:/CIPHER_tb/operation \
+sim:/CIPHER_tb/reset \
+sim:/CIPHER_tb/round
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: ekendrick  Hostname: 6CJZ0R3  ProcessID: 10696
-#           Attempting to use alternate WLF file "./wlftagcmm1".
+#           Attempting to use alternate WLF file "./wlftc0z1j8".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftagcmm1
-run 10000
-run 10000
-run 10000
-run 10000
-run 100000
-# Testbench ran successfully
-# ** Note: $stop    : C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_spi_tb.sv(75)
-#    Time: 46750 ns  Iteration: 1  Instance: /testbench_aes_spi
-# Break in Module testbench_aes_spi at C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_spi_tb.sv line 75
+#           Using alternate file: ./wlftc0z1j8
+run 200
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.CIPHER_tb(fast)
+# Loading work.CIPHER(fast)
+run 200
+# Compile of keyexpansion.sv was successful.
+# Compile of keyexpansion_tb.sv was successful.
+# Compile of RCon.sv was successful.
+# Compile of ROTWORD.sv was successful.
+# Compile of SUBBYTES.sv was successful.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of ROTWORD_tb.sv was successful.
+# Compile of SHIFTROWS.sv was successful.
+# Compile of SHIFTROWS_tb.sv was successful.
+# Compile of XTIMES.sv was successful.
+# Compile of XTIMES_tb.sv was successful.
+# Compile of MIXCOLUMNS.sv was successful.
+# Compile of MIXCOLUMNS_tb.sv was successful.
+# Compile of CIPHER.sv was successful.
+# Compile of AI_Prototype_tb.sv was successful.
+# Compile of AI_Prototype.sv was successful.
+# Compile of CIPHER_tb.sv was successful.
+# 20 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.CIPHER_tb(fast)
+# Loading work.CIPHER(fast)
+run 100
+vsim -gui -voptargs=+acc work.keyexpansion_seq_tb
+# End time: 15:55:48 on Oct 28,2025, Elapsed time: 0:02:33
+# Errors: 0, Warnings: 2
+# vsim -gui -voptargs="+acc" work.keyexpansion_seq_tb 
+# Start time: 15:55:48 on Oct 28,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/work/@_opt1/_lib.qdb".
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/work/@_opt1/_lib3_0.qdb".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/work/@_opt1/_lib3_0.qpg".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/work/@_opt1/_lib3_0.qtl".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-133) Unable to remove directory "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/work/@_opt1".
+# ** Error: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype.sv(55): Module 'RotWord' is not defined.
+#  For instance 'rotword_inst' at path 'keyexpansion_seq_tb.dut'
+# ** Error: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype.sv(62): Module 'SubWord' is not defined.
+#  For instance 'subword_inst' at path 'keyexpansion_seq_tb.dut'
+# Optimization failed
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/work/@_opt1/_lib.qdb".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/work/@_opt1/_lib3_0.qdb".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/work/@_opt1/_lib3_0.qpg".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/work/@_opt1/_lib3_0.qtl".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-133) Unable to remove directory "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/work/@_opt1".
+# The directory is not empty. (GetLastError() = 145)
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=11.
+# Error loading design
+# End time: 15:55:49 on Oct 28,2025, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 12
+# Compile of keyexpansion.sv was successful.
+# Compile of keyexpansion_tb.sv was successful.
+# Compile of RCon.sv was successful.
+# Compile of ROTWORD.sv was successful.
+# Compile of SUBBYTES.sv was successful.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_starter.sv was successful.
+# Compile of ROTWORD_tb.sv was successful.
+# Compile of SHIFTROWS.sv was successful.
+# Compile of SHIFTROWS_tb.sv was successful.
+# Compile of XTIMES.sv was successful.
+# Compile of XTIMES_tb.sv was successful.
+# Compile of MIXCOLUMNS.sv was successful.
+# Compile of MIXCOLUMNS_tb.sv was successful.
+# Compile of CIPHER.sv was successful.
+# Compile of AI_Prototype_tb.sv was successful.
+# Compile of AI_Prototype.sv was successful.
+# Compile of CIPHER_tb.sv was successful.
+# 20 compiles, 0 failed with no errors.
+restart -f
+# No Design Loaded!
+vsim -gui -voptargs=+acc work.keyexpansion_seq_tb
+# vsim -gui -voptargs="+acc" work.keyexpansion_seq_tb 
+# Start time: 15:56:35 on Oct 28,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/work/@_opt1/_lib3_0.qpg".
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/work/@_opt1/_lib3_0.qtl".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-133) Unable to remove directory "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/work/@_opt1".
+# ** Error (suppressible): C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype.sv(55): (vopt-2912) Port 'a' not found in module 'ROTWORD' (1st connection).
+# ** Error (suppressible): C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype.sv(55): (vopt-2912) Port 'y' not found in module 'ROTWORD' (2nd connection).
+# Optimization failed
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/work/@_opt1/_lib3_0.qpg".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/work/@_opt1/_lib3_0.qtl".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-133) Unable to remove directory "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/work/@_opt1".
+# The directory is not empty. (GetLastError() = 145)
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=7.
+# Error loading design
+# End time: 15:56:36 on Oct 28,2025, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 9

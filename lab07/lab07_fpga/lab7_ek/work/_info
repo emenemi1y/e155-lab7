@@ -1,9 +1,11 @@
 m255
 K4
 z2
-Z0 !s12c _opt
+Z0 !s12c _opt1
 Z1 !s99 nomlopt
-Z2 !s12c _opt1
+R0
+R1
+Z2 !s12c _opt
 R1
 R0
 R1
@@ -15,6 +17,12 @@ R2
 R1
 R0
 R1
+R2
+R1
+R2
+R1
+R2
+R1
 R0
 R1
 R0
@@ -23,61 +31,57 @@ R2
 R1
 R2
 R1
-R0
+R2
 R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
+R2
 R1
 R2
 R1
 R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R0
+R1
+R0
 R1
 Z3 !s12c _opt2
 R1
+R2
+R1
 R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
-R1
-R2
+R0
 R1
 R3
 R1
 R3
 R1
-R2
-R1
-R2
-R1
 R0
 R1
 R0
+R1
+R2
+R1
+R2
 R1
 !s11f vlog 2024.2 2024.05, May 20 2024
 13
@@ -101,20 +105,6 @@ Z8 o-quiet -auto_acc_if_foreign -work work +acc
 Z9 tCvgOpt 0
 n@_opt
 Z10 OL;O;2024.2;79
-T_opt1
-!s110 1761681722
-VIP]iEcW^n=A2ML1mX`<J>2
-04 12 4 work SHIFTROWS_tb fast 0
-=1-00be43e570c5-6901213a-ef-779c
-R1
-Z11 !s12f OEM25U2 
-R5
-R6
-R7
-R8
-R9
-n@_opt1
-R10
 R4
 T_opt2
 !s110 1761541923
@@ -122,7 +112,7 @@ VUH]`OPWTVhCToDL1LE[7Y1
 04 9 4 work XTIMES_tb fast 0
 =1-00be43e570c5-68feff23-9e-29c8
 R1
-R11
+!s12f OEM25U2 
 R5
 R6
 R7
@@ -132,109 +122,184 @@ n@_opt2
 R10
 R4
 vaes
-Z12 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv
-Z13 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z14 !s110 1761681704
+Z11 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv
+Z12 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z13 !s110 1761692173
 !i10b 1
-!s100 =M2]_G<hCPO5?SVz`Kc=:0
-IRkJ>m<lo^<UT_a:W5QgSL0
+!s100 [^Y^[a9mFFI=7g6?N1W``2
+I9HKf7k`2N:ij9`OjTa_N83
 S1
 R4
-Z15 w1761681696
-Z16 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv
-Z17 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv
-!i122 533
+Z14 w1761682047
+Z15 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv
+Z16 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv
+!i122 762
 L0 6 17
-Z18 VDg1SIo80bB@j0V0VzS_@n1
-Z19 OL;L;2024.2;79
+Z17 VDg1SIo80bB@j0V0VzS_@n1
+Z18 OL;L;2024.2;79
 r1
 !s85 0
 31
-Z20 !s108 1761681704.000000
-Z21 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv|
-Z22 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv|
+Z19 !s108 1761692173.000000
+Z20 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv|
+Z21 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv|
 !i113 0
-Z23 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z22 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R9
-vaes_core
+vaes128_keyexp_round
+Z23 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype.sv
+R12
+!s110 1761689565
+!i10b 1
+!s100 EIncnYl:gGM49B@NDPl050
+IZ2dmSC9FdBm6JBid@5mW;1
+S1
+R4
+w1761688803
+Z24 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype.sv
+Z25 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype.sv
+!i122 578
+L0 12 69
+R17
+R18
+r1
+!s85 0
+31
+!s108 1761689565.000000
+Z26 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype.sv|
+Z27 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype.sv|
+!i113 0
+R22
+R9
+vaes128_keyexp_seq
+R23
 R12
 R13
-R14
+!i10b 1
+!s100 DQje<PROAKd88__6S@RhC2
+I7zcl3P8YNS`E=DEY>H0HS2
+S1
+R4
+Z28 w1761692169
+R24
+R25
+!i122 772
+L0 17 105
+R17
+R18
+r1
+!s85 0
+31
+R19
+R26
+R27
+!i113 0
+R22
+R9
+vaes_core
+R11
+R12
+R13
 !i10b 1
 !s100 iFF:k``CF81AJLgD]dTBA1
 IKRW5l=e>zkXK2BH_n]^0@2
 S1
 R4
+R14
 R15
 R16
-R17
-!i122 533
+!i122 762
 L0 80 76
+R17
 R18
-R19
 r1
 !s85 0
 31
+R19
 R20
 R21
-R22
 !i113 0
-R23
+R22
 R9
 vaes_core_tb
-Z24 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_core_tb.sv
+Z29 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_core_tb.sv
+R12
 R13
-R14
 !i10b 1
 !s100 @@6b^NaeKcR^>X5SilgIA0
 InLnjo;[UI>Ee@CbI>Xf<31
 S1
 R4
-Z25 w1761674427
-Z26 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_core_tb.sv
-Z27 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_core_tb.sv
-!i122 530
-Z28 L0 11 42
+Z30 w1761674427
+Z31 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_core_tb.sv
+Z32 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_core_tb.sv
+!i122 759
+Z33 L0 11 42
+R17
 R18
-R19
 r1
 !s85 0
 31
-R20
-Z29 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_core_tb.sv|
-Z30 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_core_tb.sv|
+R19
+Z34 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_core_tb.sv|
+Z35 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_core_tb.sv|
 !i113 0
-R23
+R22
 R9
 vaes_spi
+R11
 R12
 R13
-R14
 !i10b 1
 !s100 n0A7e7FSOJYlGoTFSkQQj2
 I<VW?G<oEb875];JR6VXJo1
 S1
 R4
+R14
 R15
 R16
-R17
-!i122 533
+!i122 762
 L0 31 29
+R17
 R18
-R19
 r1
 !s85 0
 31
+R19
 R20
 R21
-R22
 !i113 0
-R23
+R22
+R9
+vai_tb
+Z36 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype_tb.sv
+R12
+!s110 1761691609
+!i10b 1
+!s100 VM_bYLg>GnK^RCn7X;J>z0
+IWVoTneaRR=:azR0?MUDWA2
+S1
+R4
+w1761689560
+Z37 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype_tb.sv
+Z38 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype_tb.sv
+!i122 654
+Z39 L0 9 23
+R17
+R18
+r1
+!s85 0
+31
+!s108 1761691609.000000
+Z40 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype_tb.sv|
+Z41 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/AI_Prototype_tb.sv|
+!i113 0
+R22
 R9
 vCIPHER
 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/CIPHER.sv
+R12
 R13
-!s110 1761681705
 !i10b 1
 !s100 ES9[P8ZSGkQKW45zoEl7b0
 IF8MAF0;UiKYSIcY0N_MUe1
@@ -243,48 +308,74 @@ R4
 w1761681139
 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/CIPHER.sv
 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/CIPHER.sv
-!i122 541
+!i122 770
 L0 15 47
+R17
 R18
-R19
 r1
 !s85 0
 31
-!s108 1761681705.000000
+R19
 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/CIPHER.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/CIPHER.sv|
 !i113 0
-R23
+R22
 R9
 n@c@i@p@h@e@r
-vgaloismult
+vCIPHER_tb
+2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/CIPHER_tb.sv
 R12
 R13
-R14
+!i10b 1
+!s100 C?CU;k=ebUPjElzHbA<C50
+I`DYTKE_n9nZHUAeWDLm0M1
+S1
+R4
+w1761692076
+8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/CIPHER_tb.sv
+FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/CIPHER_tb.sv
+!i122 773
+L0 9 28
+R17
+R18
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/CIPHER_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/CIPHER_tb.sv|
+!i113 0
+R22
+R9
+n@c@i@p@h@e@r_tb
+vgaloismult
+R11
+R12
+R13
 !i10b 1
 !s100 f09FB<C1[d8fCB?bW@S4M3
 IKW14V]AdG8:84Boj63VBn2
 S1
 R4
+R14
 R15
 R16
-R17
-!i122 533
+!i122 762
 L0 248 8
+R17
 R18
-R19
 r1
 !s85 0
 31
+R19
 R20
 R21
-R22
 !i113 0
-R23
+R22
 R9
 vkey_expansion_tb
-Z31 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv
-R13
+Z42 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv
+R12
 !s110 1761520963
 !i10b 1
 !s100 6@16eA7>jXbm9k1z_MM`B0
@@ -292,25 +383,25 @@ I_gYiYC19Z1]U6F]oFEPeK0
 S1
 R4
 w1761520730
-Z32 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv
-Z33 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv
+Z43 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv
+Z44 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv
 !i122 10
 L0 1 23
+R17
 R18
-R19
 r1
 !s85 0
 31
 !s108 1761520963.000000
-Z34 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv|
-Z35 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv|
+Z45 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv|
+Z46 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion_tb.sv|
 !i113 0
-R23
+R22
 R9
 vkeyexpansion
 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv
-R13
-R14
+R12
+Z47 !s110 1761692172
 !i10b 1
 !s100 ?Yig8iBY^N_X0Wk?fYfi92
 I:_PGm^@N>BHW[CzfLKfD33
@@ -319,150 +410,175 @@ R4
 w1761680721
 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv
 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv
-!i122 525
+!i122 754
 L0 9 29
+R17
 R18
-R19
 r1
 !s85 0
 31
-!s108 1761681703.000000
+Z48 !s108 1761692172.000000
 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv|
 !i113 0
-R23
+R22
+R9
+vkeyexpansion_seq_tb
+R36
+R12
+R13
+!i10b 1
+!s100 hPnNMMi0WWb^E4QGKXUJ82
+IV`W5T1KR?9ZONHYCF`]l]1
+S1
+R4
+w1761691666
+R37
+R38
+!i122 771
+L0 9 66
+R17
+R18
+r1
+!s85 0
+31
+R19
+R40
+R41
+!i113 0
+R22
 R9
 vkeyexpansion_tb
-R31
-R13
-R14
+R42
+R12
+R47
 !i10b 1
 !s100 zCQdm<Rf7<NlZOZ:Kz<523
 IaE3c5A>iTUT^cen731@N70
 S1
 R4
 w1761680917
-R32
-R33
-!i122 526
-L0 9 23
+R43
+R44
+!i122 755
+R39
+R17
 R18
-R19
 r1
 !s85 0
 31
-R20
-R34
-R35
+R48
+R45
+R46
 !i113 0
-R23
+R22
 R9
 vmixcolumn
+R11
 R12
 R13
-R14
 !i10b 1
 !s100 idJMn<fC=QET9V;bSHO]S2
 Ina8dS`A7jaM;Q<1YEWb]20
 S1
 R4
+R14
 R15
 R16
-R17
-!i122 533
+!i122 762
 L0 221 19
+R17
 R18
-R19
 r1
 !s85 0
 31
+R19
 R20
 R21
+!i113 0
 R22
-!i113 0
-R23
 R9
-vMIXCOLUMNS
-2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS.sv
-R13
-R14
-!i10b 1
-!s100 ?3CW4FHWVV><LZo`H;a>N2
-I71QCZ_IfbJNjWgFW[jSV<3
-S1
-R4
-R25
-8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS.sv
-FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS.sv
-!i122 539
-Z36 L0 1 25
-R18
-R19
-r1
-!s85 0
-31
-R20
-!s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS.sv|
-!i113 0
-R23
-R9
-n@m@i@x@c@o@l@u@m@n@s
 vmixcolumns
+R11
 R12
 R13
-R14
 !i10b 1
 !s100 fQcI5D?[5?SRY2;PSG9J10
 IzQ_[af7GEHdg>JTbXV_Ge2
 S1
 R4
+R14
 R15
 R16
-R17
-!i122 533
+!i122 762
 L0 205 8
+R17
 R18
-R19
 r1
 !s85 0
 31
+R19
 R20
 R21
-R22
 !i113 0
-R23
+R22
 R9
+vMIXCOLUMNS
+2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS.sv
+R12
+R13
+!i10b 1
+!s100 ?3CW4FHWVV><LZo`H;a>N2
+I71QCZ_IfbJNjWgFW[jSV<3
+S1
+R4
+R30
+8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS.sv
+FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS.sv
+!i122 768
+Z49 L0 1 25
+R17
+R18
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS.sv|
+!i113 0
+R22
+R9
+n@m@i@x@c@o@l@u@m@n@s
 vMIXCOLUMNS_tb
 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS_tb.sv
+R12
 R13
-R14
 !i10b 1
 !s100 =aPh<=Q2UOh>dmN;hK4b11
 INi6:fI6WJ@6K2Va>nGFTj2
 S1
 R4
-R25
+R30
 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS_tb.sv
 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS_tb.sv
-!i122 540
-R36
+!i122 769
+R49
+R17
 R18
-R19
 r1
 !s85 0
 31
-R20
+R19
 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS_tb.sv|
 !i113 0
-R23
+R22
 R9
 n@m@i@x@c@o@l@u@m@n@s_tb
 vRCon
 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/RCon.sv
-R13
-R14
+R12
+R47
 !i10b 1
 !s100 4?oWfSjTTT?gocOFTkAS;2
 IB^HKF35M9DObjH23DhINQ3
@@ -471,24 +587,24 @@ R4
 w1761680760
 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/RCon.sv
 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/RCon.sv
-!i122 527
+!i122 756
 L0 9 19
+R17
 R18
-R19
 r1
 !s85 0
 31
-R20
+R48
 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/RCon.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/RCon.sv|
 !i113 0
-R23
+R22
 R9
 n@r@con
 vROTWORD
 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD.sv
-R13
-R14
+R12
+R47
 !i10b 1
 !s100 Yj>78fVM<gLoe@_4OMEKL1
 IoLma`bHK:EPno8`89N;Y12
@@ -497,24 +613,24 @@ R4
 w1761680802
 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD.sv
 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD.sv
-!i122 528
+!i122 757
 L0 10 7
+R17
 R18
-R19
 r1
 !s85 0
 31
-R20
+R48
 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD.sv|
 !i113 0
-R23
+R22
 R9
 n@r@o@t@w@o@r@d
 vROTWORD_tb
 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD_tb.sv
+R12
 R13
-R14
 !i10b 1
 !s100 AVVQT>AglhzNkefP4;43R2
 Ij<9@W;gi5W3LA5H[KYLbm0
@@ -523,74 +639,74 @@ R4
 w1761680934
 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD_tb.sv
 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD_tb.sv
-!i122 534
+!i122 763
 L0 9 24
+R17
 R18
-R19
 r1
 !s85 0
 31
-R20
+R19
 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD_tb.sv|
 !i113 0
-R23
+R22
 R9
 n@r@o@t@w@o@r@d_tb
 vsbox
+R11
 R12
 R13
-R14
 !i10b 1
 !s100 G4H7nnS6h34kb@>ih6^Cc0
 Ibh9o[1nnS7l5a]V6@B7RI1
 S1
 R4
+R14
 R15
 R16
-R17
-!i122 533
+!i122 762
 L0 164 10
+R17
 R18
-R19
 r1
 !s85 0
 31
+R19
 R20
 R21
-R22
 !i113 0
-R23
+R22
 R9
 vsbox_sync
+R11
 R12
 R13
-R14
 !i10b 1
 !s100 T9]kWNTbY5=UHMJ@kId<K3
 IKJYP4DOVk4:XzOdbEE3fW3
 S1
 R4
+R14
 R15
 R16
-R17
-!i122 533
+!i122 762
 L0 181 16
+R17
 R18
-R19
 r1
 !s85 0
 31
+R19
 R20
 R21
-R22
 !i113 0
-R23
+R22
 R9
 vSHIFTROWS
 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SHIFTROWS.sv
+R12
 R13
-R14
 !i10b 1
 !s100 moF3H]UGQgcidD?1>^>ba2
 IHYISTI<P=j7GZ7LWZ<n;=0
@@ -599,24 +715,24 @@ R4
 w1761680976
 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SHIFTROWS.sv
 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SHIFTROWS.sv
-!i122 535
+!i122 764
 L0 10 24
+R17
 R18
-R19
 r1
 !s85 0
 31
-R20
+R19
 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SHIFTROWS.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SHIFTROWS.sv|
 !i113 0
-R23
+R22
 R9
 n@s@h@i@f@t@r@o@w@s
 vSHIFTROWS_tb
 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SHIFTROWS_tb.sv
+R12
 R13
-R14
 !i10b 1
 !s100 jL?9JMjC`bZnNk]>c`FHf3
 Ifa]eX3J[U:kfjO`]CKY[G2
@@ -625,24 +741,24 @@ R4
 w1761681000
 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SHIFTROWS_tb.sv
 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SHIFTROWS_tb.sv
-!i122 536
+!i122 765
 L0 9 25
+R17
 R18
-R19
 r1
 !s85 0
 31
-R20
+R19
 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SHIFTROWS_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SHIFTROWS_tb.sv|
 !i113 0
-R23
+R22
 R9
 n@s@h@i@f@t@r@o@w@s_tb
 vSUBBYTES
 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SUBBYTES.sv
-R13
-R14
+R12
+R47
 !i10b 1
 !s100 @AWz3cIYPFY8YoHH6<D4i3
 IdaCanL3Fl[S7ae:c7oU4f0
@@ -651,23 +767,49 @@ R4
 w1761680857
 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SUBBYTES.sv
 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SUBBYTES.sv
-!i122 529
+!i122 758
 L0 9 7
+R17
 R18
-R19
 r1
 !s85 0
 31
-R20
+R48
 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SUBBYTES.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SUBBYTES.sv|
 !i113 0
-R23
+R22
 R9
 n@s@u@b@b@y@t@e@s
-vtestbench_aes_core
-R24
+vSUBWORD
+R23
+R12
 R13
+!i10b 1
+!s100 b3X]l@[hMdgl_LEm]FoX52
+I[og@9BVB7AF_nk>T`7P8L0
+S1
+R4
+R28
+R24
+R25
+!i122 772
+L0 125 7
+R17
+R18
+r1
+!s85 0
+31
+R19
+R26
+R27
+!i113 0
+R22
+R9
+n@s@u@b@w@o@r@d
+vtestbench_aes_core
+R29
+R12
 !s110 1761608471
 !i10b 1
 !s100 FIO7h3@d^kFng7_gbKhj30
@@ -675,75 +817,75 @@ IomYKRS;1F`<018RcHWNLi2
 S1
 R4
 w1761608463
-R26
-R27
+R31
+R32
 !i122 192
-R28
+R33
+R17
 R18
-R19
 r1
 !s85 0
 31
 !s108 1761608471.000000
-R29
-R30
+R34
+R35
 !i113 0
-R23
+R22
 R9
 vtestbench_aes_sbox
 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_sbox_tb.sv
+R12
 R13
-R14
 !i10b 1
 !s100 E802:^hIgYbZd^<0leGNb3
 I[l:J_E1h?`2;6_aWb;UDZ0
 S1
 R4
-Z37 w1761446356
+Z50 w1761446356
 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_sbox_tb.sv
 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_sbox_tb.sv
-!i122 531
+!i122 760
 L0 7 67
+R17
 R18
-R19
 r1
 !s85 0
 31
-R20
+R19
 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_sbox_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_sbox_tb.sv|
 !i113 0
-R23
+R22
 R9
 vtestbench_aes_spi
 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_spi_tb.sv
+R12
 R13
-R14
 !i10b 1
 !s100 ECM4U[SG6oCU]XGW;T?IF2
 I670i]^0FDWS8dlizz42O`1
 S1
 R4
-R37
+R50
 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_spi_tb.sv
 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_spi_tb.sv
-!i122 532
+!i122 761
 L0 8 73
+R17
 R18
-R19
 r1
 !s85 0
 31
-R20
+R19
 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_spi_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_spi_tb.sv|
 !i113 0
-R23
+R22
 R9
 vXTIMES
 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/XTIMES.sv
+R12
 R13
-R14
 !i10b 1
 !s100 EX[VX4Chd02W_OTFU2Q2Q3
 I@NDinaS0BL;S9dm_^U7TQ0
@@ -752,24 +894,24 @@ R4
 w1761541608
 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/XTIMES.sv
 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/XTIMES.sv
-!i122 537
+!i122 766
 L0 1 15
+R17
 R18
-R19
 r1
 !s85 0
 31
-R20
+R19
 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/XTIMES.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/XTIMES.sv|
 !i113 0
-R23
+R22
 R9
 n@x@t@i@m@e@s
 vXTIMES_tb
 2C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/XTIMES_tb.sv
+R12
 R13
-R14
 !i10b 1
 !s100 W0S_hc0AQ>28b]8Hkn]`72
 I^X5`e0REF5Ni57jba:]BA2
@@ -778,17 +920,17 @@ R4
 w1761541885
 8C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/XTIMES_tb.sv
 FC:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/XTIMES_tb.sv
-!i122 538
-R36
+!i122 767
+R49
+R17
 R18
-R19
 r1
 !s85 0
 31
-R20
+R19
 !s107 C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/XTIMES_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/XTIMES_tb.sv|
 !i113 0
-R23
+R22
 R9
 n@x@t@i@m@e@s_tb
