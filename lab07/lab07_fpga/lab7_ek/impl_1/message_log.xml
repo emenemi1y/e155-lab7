@@ -346,25 +346,25 @@
             <ID>35901018</ID>
             <Severity>1</Severity>
             <Dynamic>C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): </Dynamic>
-            <Dynamic>HSOSC(CLKHF_DIV=&quot;0b11&quot;)</Dynamic>
+            <Dynamic>HSOSC(CLKHF_DIV=2'b01)</Dynamic>
             <Navigation>C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v</Navigation>
             <Navigation>756</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(30): </Dynamic>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(31): </Dynamic>
             <Dynamic>aes_spi</Dynamic>
             <Navigation>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv</Navigation>
-            <Navigation>30</Navigation>
+            <Navigation>31</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(79): </Dynamic>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(80): </Dynamic>
             <Dynamic>aes_core</Dynamic>
             <Navigation>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv</Navigation>
-            <Navigation>79</Navigation>
+            <Navigation>80</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -385,18 +385,18 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(180): </Dynamic>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(181): </Dynamic>
             <Dynamic>sbox_sync</Dynamic>
             <Navigation>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv</Navigation>
-            <Navigation>180</Navigation>
+            <Navigation>181</Navigation>
         </Message>
         <Message>
             <ID>35931002</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(187): </Dynamic>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(188): </Dynamic>
             <Dynamic>sbox</Dynamic>
             <Navigation>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv</Navigation>
-            <Navigation>187</Navigation>
+            <Navigation>188</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -409,26 +409,26 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(204): </Dynamic>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(205): </Dynamic>
             <Dynamic>mixcolumns</Dynamic>
             <Navigation>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv</Navigation>
-            <Navigation>204</Navigation>
+            <Navigation>205</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(220): </Dynamic>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(221): </Dynamic>
             <Dynamic>mixcolumn</Dynamic>
             <Navigation>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv</Navigation>
-            <Navigation>220</Navigation>
+            <Navigation>221</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(247): </Dynamic>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(248): </Dynamic>
             <Dynamic>galoismult</Dynamic>
             <Navigation>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv</Navigation>
-            <Navigation>247</Navigation>
+            <Navigation>248</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -457,10 +457,10 @@
         <Message>
             <ID>35931038</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(187): </Dynamic>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(188): </Dynamic>
             <Dynamic>sbox_original_ramnet</Dynamic>
             <Navigation>c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv</Navigation>
-            <Navigation>187</Navigation>
+            <Navigation>188</Navigation>
         </Message>
         <Message>
             <ID>35001774</ID>

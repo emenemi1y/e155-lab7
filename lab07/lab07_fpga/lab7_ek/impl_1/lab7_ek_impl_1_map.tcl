@@ -13,6 +13,7 @@ sys_set_attribute -gui on -msg {C:/Users/ekendrick/Documents/GitHub/e155-lab7/la
 msg_load {C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/promote.xml}
 des_set_project_udb -in {lab7_ek_impl_1_syn.udb} -out {lab7_ek_impl_1_map.udb} -milestone map -pm ice40tp
 des_set_reference_udb -clean
+map_set_option {pdc_file "C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/pins.pdc"}
 # map option
 map_set_option { report_symbol_cross_reference false report_signal_cross_reference false   ignore_constraint_errors false}
 map_run

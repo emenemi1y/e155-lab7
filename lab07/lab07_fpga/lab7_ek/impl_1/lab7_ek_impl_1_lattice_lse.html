@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Oct 27 22:20:08 2025
+Tue Oct 28 11:39:18 2025
 
 
 Command Line:  C:\lscc\radiant\2024.2\ispfpga\bin\nt64\synthesis.exe -f C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/impl_1/lab7_ek_impl_1_lattice.synproj -logfile lab7_ek_impl_1_lattice.srp -gui -msgset C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/promote.xml 
@@ -230,17 +230,17 @@ INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Use
 Top module language type = Verilog.
 Top module name (Verilog, mixed language): aes
 INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(6): compiling module aes. VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): compiling module HSOSC(CLKHF_DIV="0b11"). VERI-1018
-INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(30): compiling module aes_spi. VERI-1018
-INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(79): compiling module aes_core. VERI-1018
+INFO <35901018> - synthesis: C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): compiling module HSOSC(CLKHF_DIV=2'b01). VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(31): compiling module aes_spi. VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(80): compiling module aes_core. VERI-1018
 INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/cipher.sv(1): compiling module CIPHER. VERI-1018
 INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/subbytes.sv(1): compiling module SUBBYTES. VERI-1018
-INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(180): compiling module sbox_sync. VERI-1018
-WARNING <35931002> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(187): net sbox does not have a driver. VDB-1002
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(181): compiling module sbox_sync. VERI-1018
+WARNING <35931002> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(188): net sbox does not have a driver. VDB-1002
 INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/shiftrows.sv(1): compiling module SHIFTROWS. VERI-1018
-INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(204): compiling module mixcolumns. VERI-1018
-INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(220): compiling module mixcolumn. VERI-1018
-INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(247): compiling module galoismult. VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(205): compiling module mixcolumns. VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(221): compiling module mixcolumn. VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(248): compiling module galoismult. VERI-1018
 INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv(1): compiling module keyexpansion. VERI-1018
 INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/rcon.sv(1): compiling module RCon. VERI-1018
 INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/rotword.sv(1): compiling module ROTWORD. VERI-1018
@@ -251,10 +251,10 @@ INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07
 
 	[Parameter Settings for Instance(s): hf_osc]
 	(Module: HSOSC)
-		CLKHF_DIV                 "0b11"
+		CLKHF_DIV                 2'b01
 
 [Parameter Setting Section End]
-WARNING <35931038> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(187): ram sbox_original_ramnet has no write-port on it. VDB-1038
+WARNING <35931038> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(188): ram sbox_original_ramnet has no write-port on it. VDB-1038
 INFO <35001774> - synthesis: Extracted state machine for register '\core/round' with one-hot encoding
 State machine has 16 reachable states with original encodings of:
 
@@ -387,7 +387,7 @@ Peak Memory Usage: 118 MB
 Total CPU Time: 7 secs 
 Total REAL Time: 13 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: 48837ff6bb5eb41f7b23c3724b2ce45aeccac24
+Checksum -- synthesis -- netlist: d9b7895c9eb7e53f470a2d72d61c6a8691a8ccb4
 
 
 

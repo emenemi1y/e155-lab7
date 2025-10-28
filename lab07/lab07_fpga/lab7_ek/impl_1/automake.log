@@ -9,7 +9,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Oct 27 22:20:08 2025
+Tue Oct 28 11:39:18 2025
 
 
 Command Line:  C:\lscc\radiant\2024.2\ispfpga\bin\nt64\synthesis.exe -f C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/impl_1/lab7_ek_impl_1_lattice.synproj -logfile lab7_ek_impl_1_lattice.srp -gui -msgset C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/promote.xml 
@@ -191,17 +191,17 @@ INFO <35921504> - The default VHDL library search path is now "C:/Users/ekendric
 Top module language type = Verilog.
 Top module name (Verilog, mixed language): aes
 INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(6): compiling module aes. VERI-1018
-INFO <35901018> - C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): compiling module HSOSC(CLKHF_DIV=&quot;0b11&quot;). VERI-1018
-INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(30): compiling module aes_spi. VERI-1018
-INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(79): compiling module aes_core. VERI-1018
+INFO <35901018> - C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): compiling module HSOSC(CLKHF_DIV=2&apos;b01). VERI-1018
+INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(31): compiling module aes_spi. VERI-1018
+INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(80): compiling module aes_core. VERI-1018
 INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/cipher.sv(1): compiling module CIPHER. VERI-1018
 INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/subbytes.sv(1): compiling module SUBBYTES. VERI-1018
-INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(180): compiling module sbox_sync. VERI-1018
-WARNING <35931002> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(187): net sbox does not have a driver. VDB-1002
+INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(181): compiling module sbox_sync. VERI-1018
+WARNING <35931002> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(188): net sbox does not have a driver. VDB-1002
 INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/shiftrows.sv(1): compiling module SHIFTROWS. VERI-1018
-INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(204): compiling module mixcolumns. VERI-1018
-INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(220): compiling module mixcolumn. VERI-1018
-INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(247): compiling module galoismult. VERI-1018
+INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(205): compiling module mixcolumns. VERI-1018
+INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(221): compiling module mixcolumn. VERI-1018
+INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(248): compiling module galoismult. VERI-1018
 INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv(1): compiling module keyexpansion. VERI-1018
 INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/rcon.sv(1): compiling module RCon. VERI-1018
 INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/rotword.sv(1): compiling module ROTWORD. VERI-1018
@@ -209,10 +209,10 @@ INFO <35901018> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga
 
 	[Parameter Settings for Instance(s): hf_osc]
 	(Module: HSOSC)
-		CLKHF_DIV                 "0b11"
+		CLKHF_DIV                 2'b01
 
 [Parameter Setting Section End]
-WARNING <35931038> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(187): ram sbox_original_ramnet has no write-port on it. VDB-1038
+WARNING <35931038> - c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(188): ram sbox_original_ramnet has no write-port on it. VDB-1038
 INFO <35001774> - Extracted state machine for register '\core/round' with one-hot encoding
 State machine has 16 reachable states with original encodings of:
 
@@ -336,7 +336,7 @@ Peak Memory Usage: 118 MB
 Total CPU Time: 7 secs 
 Total REAL Time: 13 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: 48837ff6bb5eb41f7b23c3724b2ce45aeccac24
+Checksum -- synthesis -- netlist: d9b7895c9eb7e53f470a2d72d61c6a8691a8ccb4
 
 
 
@@ -364,7 +364,7 @@ POSTSYN finished successfully.
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
 Peak Memory Usage: 55 MB
-Checksum -- postsyn: 8c0eda9183a58f2a20b1abb55b4f15e3fcaf0855
+Checksum -- postsyn: 290abde9aa386a5c9c64a4381e9d5a89b09961a3
 
 
 
@@ -377,7 +377,7 @@ Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 
-Command line:   map -i lab7_ek_impl_1_syn.udb -o lab7_ek_impl_1_map.udb -mp lab7_ek_impl_1.mrp -hierrpt -gui -msgset C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/promote.xml 
+Command line:   map -pdc C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/pins.pdc -i lab7_ek_impl_1_syn.udb -o lab7_ek_impl_1_map.udb -mp lab7_ek_impl_1.mrp -hierrpt -gui -msgset C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/promote.xml 
 
 Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2024.2/ispfpga.
 Package Status:                     Preliminary    Version 1.5.
@@ -457,21 +457,21 @@ Running physical design DRC...
    Number of errors:    0
 
 Constraint Summary:
-   Total number of constraints: 1
+   Total number of constraints: 6
    Total number of constraints dropped: 0
 
 
 Total CPU Time: 0 secs  
 Total REAL Time: 0 secs  
-Peak Memory Usage: 93 MB
+Peak Memory Usage: 94 MB
 
-Checksum -- map: fc0ffd91b08ea818636ba654a7f36dd94aeb13aa
+Checksum -- map: e5423c14137e7c7e685014f324380ac4bce984b2
 Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /0 secs 
 
 pnmainc -log pnmain "lab7_ek_impl_1_par.tcl"
 
 PAR: Place And Route Radiant Software (64-bit) 2024.2.0.3.0.
-PARed on: Mon Oct 27 22:20:40 2025
+PARed on: Tue Oct 28 11:39:51 2025
 
 Command Line: par -w -t 1 -cores 1 -hsp m -exp parPathBased=ON \
 	lab7_ek_impl_1_map.udb lab7_ek_impl_1_par.dir/5_1.udb 
@@ -490,7 +490,7 @@ Package: SG48
 Performance Grade:   High-Performance_1.2V
 
 Constraint Summary
-   Total number of constraints: 1
+   Total number of constraints: 6
    Total number of constraints dropped: 0
 
 Number of Signals: 2696
@@ -520,30 +520,29 @@ Device utilization summary:
    OPENDRAIN          0/3             0% used
 
 Pin Constraint Summary:
-   0 out of 5 pins locked (0% locked).
-.
-..............
-Finished Placer Phase 0 (HIER). CPU time: 1 secs , REAL time: 0 secs 
+   5 out of 5 pins locked (100% locked).
+
+Finished Placer Phase 0 (HIER). CPU time: 0 secs , REAL time: 0 secs 
 
 
-................
+.................
 Finished Placer Phase 0 (AP).  CPU time: 2 secs , REAL time: 2 secs 
 
 Starting Placer Phase 1. CPU time: 2 secs , REAL time: 2 secs 
 ..  ..
 ....................
 
-Placer score = 456536.
+Placer score = 460697.
 
 Device SLICE utilization summary after final SLICE packing:
    SLICE            900/2640         34% used
 
-Finished Placer Phase 1. CPU time: 8 secs , REAL time: 8 secs 
+Finished Placer Phase 1. CPU time: 8 secs , REAL time: 9 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  617437
+Placer score =  629213
 Finished Placer Phase 2.  CPU time: 8 secs , REAL time: 9 secs 
 
 
@@ -551,9 +550,9 @@ Finished Placer Phase 2.  CPU time: 8 secs , REAL time: 9 secs
 
 Global Clocks :
   PRIMARY "clk" from comp "hf_osc.osc_inst" on site "HFOSC_R1C32", clk load = 224, ce load = 0, sr load = 0
-  PRIMARY "sck_c" from comp "sck" on CLK_PIN site "35 (PR13B)", clk load = 195, ce load = 0, sr load = 0
-  PRIMARY "done_c_N_959" from F1 on comp "spi.SLICE_870" on site "R13C8A", clk load = 0, ce load = 64, sr load = 0
-  PRIMARY "core.n3572" from F1 on comp "core.SLICE_1108" on site "R16C20D", clk load = 0, ce load = 64, sr load = 0
+  PRIMARY "sck_c" from comp "sck" on PIO site "21 (PL19B)", clk load = 195, ce load = 0, sr load = 0
+  PRIMARY "done_c_N_959" from F1 on comp "spi.SLICE_870" on site "R11C6B", clk load = 0, ce load = 64, sr load = 0
+  PRIMARY "core.n3572" from F1 on comp "core.SLICE_1108" on site "R15C25A", clk load = 0, ce load = 64, sr load = 0
 
   PRIMARY  : 4 out of 8 (50%)
 
@@ -578,11 +577,11 @@ I/O Bank Usage Summary:
 Total Placer CPU time: 8 secs , REAL time: 9 secs 
 
 
-Checksum -- place: a7ce27457853f40579e15f4bf1fbff7a0324a06
+Checksum -- place: e776435e307c3be8d6b170da4ecf87b3a4cf8579
 Writing design to file lab7_ek_impl_1_par.dir/5_1.udb ...
 
 
-Start NBR router at 22:20:49 10/27/25
+Start NBR router at 11:40:00 10/28/25
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -600,7 +599,6 @@ Note: NBR uses a different method to calculate timing slacks. The
 Starting routing resource preassignment
 Preassignment Summary:
 --------------------------------------------------------------------------------
-1 connections routed with dedicated routing resources
 3 global clock signals routed
 1274 connections routed (of 6908 total) (18.44%)
 ---------------------------------------------------------
@@ -623,45 +621,48 @@ Completed routing resource preassignment
 Routing in Serial Mode ......
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Start NBR section for initial routing at 22:20:50 10/27/25
+Start NBR section for initial routing at 11:40:01 10/28/25
 Level 4, iteration 1
-253(0.10%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 142.637ns/0.000ns; real time: 6 secs 
+252(0.10%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.989ns/0.000ns; real time: 6 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 22:20:55 10/27/25
+Start NBR section for normal routing at 11:40:06 10/28/25
 Level 4, iteration 1
-51(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 142.637ns/0.000ns; real time: 7 secs 
+35(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.989ns/0.000ns; real time: 7 secs 
 Level 4, iteration 2
-16(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 142.637ns/0.000ns; real time: 7 secs 
+13(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.989ns/0.000ns; real time: 7 secs 
 Level 4, iteration 3
-7(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 142.637ns/0.000ns; real time: 7 secs 
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.989ns/0.000ns; real time: 7 secs 
 Level 4, iteration 4
-3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 142.637ns/0.000ns; real time: 7 secs 
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.989ns/0.000ns; real time: 7 secs 
 Level 4, iteration 5
-2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 142.637ns/0.000ns; real time: 7 secs 
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.989ns/0.000ns; real time: 7 secs 
 Level 4, iteration 6
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.989ns/0.000ns; real time: 7 secs 
+Level 4, iteration 7
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 142.107ns/0.000ns; real time: 7 secs 
+Estimated worst slack/total negative slack<setup>: 16.989ns/0.000ns; real time: 7 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 22:20:56 10/27/25
+Start NBR section for setup/hold timing optimization with effort level 3 at 11:40:07 10/28/25
 Changing speed to m;   changing temperature to -40
 Changing speed to 6;   changing temperature to 100
 
-Start NBR section for post-routing at 22:20:56 10/27/25
+Start NBR section for post-routing at 11:40:07 10/28/25
 
 End NBR router with 0 unrouted connection(s)
 Changing speed to m;   changing temperature to -40
 Changing speed to 6;   changing temperature to 100
 
-Checksum -- route: 6f4d28cc4f6a25f382852b1320e5aba474ebf2f8
+Checksum -- route: 4e4bac6d5744ccd638cde363aab271a65245f1ef
 
 Total CPU time 8 secs 
 Total REAL time: 9 secs 
@@ -673,7 +674,7 @@ Writing design to file lab7_ek_impl_1_par.dir/5_1.udb ...
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Estimated worst slack<setup/<ns>> = 143.405
+PAR_SUMMARY::Estimated worst slack<setup/<ns>> = 18.478
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
 PAR_SUMMARY::Estimated worst slack<hold/<ns>> = 1.743
 PAR_SUMMARY::Timing score<hold/<ns>> = 0.000
@@ -683,7 +684,7 @@ Note: user must run 'timing' for timing closure signoff.
 
 Total CPU  Time: 17 secs 
 Total REAL Time: 18 secs 
-Peak Memory Usage: 171.42 MB
+Peak Memory Usage: 170.75 MB
 
 
 par done!
@@ -710,7 +711,7 @@ Performance Grade:   High-Performance_1.2V
 
 
 
-Successfully loading udb, 0.08 seconds
+Successfully loading udb, 0.06 seconds
 
 Initializing timer
 Starting design annotation....
@@ -722,11 +723,11 @@ Connections ignored  419  counted  6036  covered  4997
 Changing speed to m;   changing temperature to -40
 
 STA Runtime and Peak Memory Usage :
-Total CPU Time: 3 secs 
+Total CPU Time: 2 secs 
 Total REAL Time: 3 secs 
-Peak Memory Usage: 126 MB
+Peak Memory Usage: 125 MB
 
- 3.145488s wall, 3.015625s user + 0.093750s system = 3.109375s CPU (98.9%)
+ 2.948295s wall, 2.765625s user + 0.156250s system = 2.921875s CPU (99.1%)
 
 
 tmcheck -par "lab7_ek_impl_1.par"  
@@ -746,7 +747,7 @@ Package: SG48
 Performance Grade:   High-Performance_1.2V
 
 Constraint Summary
-   Total number of constraints: 1
+   Total number of constraints: 6
    Total number of constraints dropped: 0
 
 Successfully loading design udb and device data from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 

@@ -1,3 +1,11 @@
+/////////////////////////////////////////////
+// keyexpansion
+//   Performs key expansion for one key based on a previous key
+//   Author: Emily Kendrick
+//   Email:  ekendrick@hmc.edu
+//   Date:   10/28/25
+/////////////////////////////////////////////
+
 module keyexpansion(input logic [127:0]  prev_key,
 					input logic [3:0]   round,
 					input logic 	    clk,

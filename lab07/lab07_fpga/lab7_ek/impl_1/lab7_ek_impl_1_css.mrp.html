@@ -49,13 +49,14 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2024.2.0.3.0
-Mapped on: Mon Oct 27 22:20:30 2025
+Mapped on: Tue Oct 28 11:39:41 2025
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
 
-Command line:   map -i lab7_ek_impl_1_syn.udb -o lab7_ek_impl_1_map.udb -mp
-     lab7_ek_impl_1.mrp -hierrpt -gui -msgset C:/Users/ekendrick/Documents/GitHu
-     b/e155-lab7/lab07/lab07_fpga/lab7_ek/promote.xml
+Command line:   map -pdc C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab
+     07_fpga/lab7_ek/pins.pdc -i lab7_ek_impl_1_syn.udb -o
+     lab7_ek_impl_1_map.udb -mp lab7_ek_impl_1.mrp -hierrpt -gui -msgset C:/User
+     s/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/promote.xml
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
 
@@ -149,7 +150,7 @@ OSC 1:                                 Pin/Node Value
   Power UP:                            NODE     VCC_net
   Enable Signal:                       NODE     VCC_net
   OSC Output:                          NODE     clk
-  DIV Setting:                                  11
+  DIV Setting:                                  01
 
 <A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
 
@@ -200,15 +201,15 @@ Instance Name: hf_osc.osc_inst
 
 <A name="mrp_consum"></A><B><U><big>Constraint Summary</big></U></B>
 
-   Total number of constraints: 1
+   Total number of constraints: 6
    Total number of constraints dropped: 0
 
 <A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 93 MB
-Checksum -- map: fc0ffd91b08ea818636ba654a7f36dd94aeb13aa
+   Peak Memory Usage: 94 MB
+Checksum -- map: e5423c14137e7c7e685014f324380ac4bce984b2
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995
      AT&amp;T Corp.   All rights reserved.

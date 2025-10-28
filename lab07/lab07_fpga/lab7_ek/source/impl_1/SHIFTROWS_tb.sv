@@ -1,3 +1,11 @@
+/////////////////////////////////////////////
+// SHIFTROWS_tb
+//   Testbench for the SHIFTROWS module.
+//   Author: Emily Kendrick
+//   Email:  ekendrick@hmc.edu
+//   Date:   10/28/25
+/////////////////////////////////////////////
+
 module SHIFTROWS_tb();
 	logic [127:0] a;
 	logic [127:0] y;

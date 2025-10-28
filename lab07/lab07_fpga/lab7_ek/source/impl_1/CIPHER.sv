@@ -1,3 +1,17 @@
+/////////////////////////////////////////////
+// CIPHER
+//   CIPHER fsm
+//   round = current round of cipher
+//   reset = reset fsm
+//   cipherComplete = ciphertext generated
+//   incrementRound = send signal to main module to add one to the round
+//   keyUpdate = send signal to top module to update the key
+//   operation[0] = AddRoundKey, operation[1] = subBytes, operation[2] = shiftRows, operation[3] = mixColumns
+//   Author: Emily Kendrick
+//   Email:  ekendrick@hmc.edu
+//   Date:   10/28/25
+/////////////////////////////////////////////
+
 module CIPHER(input logic [3:0] round,
 			  input logic reset,
 			  input logic clk, load,

@@ -75,7 +75,7 @@ int main(void) {
   digitalWrite(PA10, 0);
 
   // Artificial chip select signal to allow 8-bit CE-based SPI decoding on the logic analyzers.
-  pinMode(PA11, GPIO_OUTPUT);
+  pinMode(SPI_CE, GPIO_OUTPUT);
   digitalWrite(SPI_CE, 1);
 
 

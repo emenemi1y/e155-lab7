@@ -1,3 +1,12 @@
+/////////////////////////////////////////////
+// SHIFTROWS
+//   The transformation of the state in which the last three rows are cyclically shifted by different offsets. 
+//   a = 128-bit input, y = 128-bit output
+//   Author: Emily Kendrick
+//   Email:  ekendrick@hmc.edu
+//   Date:   10/28/25
+/////////////////////////////////////////////
+
 module SHIFTROWS(input logic [127:0] a,
 				output logic [127:0] y);
 				

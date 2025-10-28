@@ -1,3 +1,11 @@
+/////////////////////////////////////////////
+// RCon
+//   Combinational logic for the round constant 
+//   Author: Emily Kendrick
+//   Email:  ekendrick@hmc.edu
+//   Date:   10/28/25
+/////////////////////////////////////////////
+
 module RCon(input logic [3:0] i,
 			output logic [31:0] rconi);
 	

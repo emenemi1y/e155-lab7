@@ -1,3 +1,11 @@
+/////////////////////////////////////////////
+// ROTWORD_tb
+//   Testbench for ROTWORD module.
+//   Author: Emily Kendrick
+//   Email:  ekendrick@hmc.edu
+//   Date:   10/28/25
+/////////////////////////////////////////////
+
 module ROTWORD_tb();
 	logic [31:0] word, rotword;
 	logic clk;

@@ -1,3 +1,11 @@
+/////////////////////////////////////////////
+// keyexpansion_tb
+//   Testbench for key expansion. 
+//   Author: Emily Kendrick
+//   Email:  ekendrick@hmc.edu
+//   Date:   10/28/25
+/////////////////////////////////////////////
+
 module keyexpansion_tb();
 
 	logic clk;
@@ -6,7 +14,6 @@ module keyexpansion_tb();
 	logic [3:0] round;
 	
 	keyexpansion ke(prev_key, round, clk, new_key);
-	
 	
 	always
 		begin
