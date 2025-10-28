@@ -78,8 +78,62 @@ module aes_core(input  logic         clk,
                 input  logic [127:0] plaintext, 
                 output logic         done, 
                 output logic [127:0] cyphertext);
+	
+	logic [3:0] round;
+	logic reset;
+	logic incrementRound;
+	logic keyUpdate;
+	logic [3:0] operation;
+	logic [127:0] sb_output, sr_output, mc_output, prev_key, current_key, cypher_mid;
 
-    // TODO: Your code goes here
+	CIPHER pc(round, reset, clk, load, done, incrementRound, keyUpdate, operation);
+	SUBBYTES sb(cypher_mid, clk, sb_output);
+	SHIFTROWS sr(cypher_mid, sr_output);
+	mixcolumns mc(cypher_mid, mc_output);
+	keyexpansion ke(prev_key, round, clk, current_key);
+	
+	typedef enum logic [2:0] {waiting, go, finished} statetype;
+	statetype state, nextstate;	
+	
+	always_ff @(posedge clk) 
+		if (~reset) state <= waiting;
+		else state <= nextstate;
+			
+	always_comb 
+		case(state)
+			waiting:     if (load) nextstate = go;
+						 else 	   nextstate = waiting;
+			go: 		 if (done) nextstate = finished;
+						 else      nextstate = go;
+			finished: 	 nextstate = waiting;
+			default: 	 nextstate = waiting;
+		endcase
+		
+	// output logic
+	always_comb begin
+		reset = ~(state == waiting);
+		if (waiting) begin
+			prev_key = key;
+			cypher_mid = plaintext;
+			round = 0;
+		end
+		else begin
+			reset = 0;
+			if (keyUpdate)         prev_key = current_key;
+			else		   		   prev_key = prev_key;
+			if (incrementRound)    round = round + 4'b1;
+			else 				   round = round;
+			if (operation[0]) 	   cypher_mid = (cypher_mid ^ current_key);
+			else if (operation[1]) cypher_mid = sb_output;
+			else if (operation[2]) cypher_mid = sr_output;
+			else if (operation[3]) cypher_mid = mc_output;
+			else 				   cypher_mid = cypher_mid;
+		end
+		if (done) cyphertext = cypher_mid;
+		else cyphertext = 127'h0;	
+	end	
+
+    
     
 endmodule
 

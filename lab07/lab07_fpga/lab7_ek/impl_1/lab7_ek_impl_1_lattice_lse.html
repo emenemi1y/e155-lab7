@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Oct 27 11:18:29 2025
+Mon Oct 27 17:03:00 2025
 
 
 Command Line:  C:\lscc\radiant\2024.2\ispfpga\bin\nt64\synthesis.exe -f C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/impl_1/lab7_ek_impl_1_lattice.synproj -logfile lab7_ek_impl_1_lattice.srp -gui -msgset C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/promote.xml 
@@ -161,9 +161,10 @@ Verilog design file: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_f
 Verilog design file: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/ROTWORD.sv
 Verilog design file: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SUBBYTES.sv
 Verilog design file: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/SHIFTROWS.sv
-Verilog design file: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/MIXCOLUMNS.sv
 Verilog design file: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/XTIMES.sv
 Verilog design file: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv
+Verilog design file: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/CIPHER.sv
+Verilog design file: C:/Users/ekendrick/Documents/GitHub/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_core_tb.sv
 VHDL library: pmi
 VHDL design file: C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.vhd
 WARNING <35935050> - synthesis: input port TRIM9 is not connected on this instance. VDB-5050
@@ -216,13 +217,13 @@ INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dq_be.v(45): 
 INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_dsp.v. VERI-1328
 Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv. VERI-1482
 Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/rcon.sv. VERI-1482
-WARNING <35901208> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/rcon.sv(13): literal value truncated to fit in 1066323968 bits. VERI-1208
 Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/rotword.sv. VERI-1482
 Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/subbytes.sv. VERI-1482
 Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/shiftrows.sv. VERI-1482
-Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/mixcolumns.sv. VERI-1482
 Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/xtimes.sv. VERI-1482
 Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv. VERI-1482
+Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/cipher.sv. VERI-1482
+Analyzing Verilog file c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_core_tb.sv. VERI-1482
 Analyzing VHDL file c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd. VHDL-1481
 Analyzing VHDL file c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd
 
@@ -233,27 +234,44 @@ Top module name (Verilog, mixed language): aes
 INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(6): compiling module aes. VERI-1018
 INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(26): compiling module aes_spi. VERI-1018
 INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(75): compiling module aes_core. VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/cipher.sv(1): compiling module CIPHER. VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/subbytes.sv(1): compiling module SUBBYTES. VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(164): compiling module sbox_sync. VERI-1018
+WARNING <35931002> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(171): net sbox does not have a driver. VDB-1002
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/shiftrows.sv(1): compiling module SHIFTROWS. VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(188): compiling module mixcolumns. VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(204): compiling module mixcolumn. VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(231): compiling module galoismult. VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/keyexpansion.sv(1): compiling module keyexpansion. VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/rcon.sv(1): compiling module RCon. VERI-1018
+INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/rotword.sv(1): compiling module ROTWORD. VERI-1018
+WARNING <35901899> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(134): behavior inside always_comb block does not represent combinational logic. VERI-1899
 
 <A name="lse_parameter"></A><B><U><big>Parameter Setting</big></U></B>
 
 [Parameter Setting Section Start]
 
 [Parameter Setting Section End]
+WARNING <35931038> - synthesis: c:/users/ekendrick/documents/github/e155-lab7/lab07/lab07_fpga/lab7_ek/source/impl_1/aes_starter.sv(171): ram sbox_original_ramnet has no write-port on it. VDB-1038
 
 
 
-INFO <35002039> - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \core/pc/state[4:0] stuck at '0': 4, 3, 2, 1, 0
+WARNING <35935040> - synthesis: Register \spi/wasdone clock is stuck at Zero. VDB-5040
+WARNING <35935040> - synthesis: Register \spi/sdodelayed clock is stuck at Zero. VDB-5040
+######## Found 1 RTL RAMs in the design.
+######## Mapping RTL RAM \spi/key to 1 EBR blocks in PSEUDO_DUAL_PORT Mode
+
+CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: clk
+CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: sck
+CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: sdi
+CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: load
 
 
 <A name="lse_area"></A><B><U><big>Area Report</big></U></B>
 
 ################### Begin Area Report (aes)######################
-Number of register bits => 384 of 5280 (7 % )
-FD1P3XZ => 384
-IB => 4
-INV => 1
-IOL_B => 1
-LUT4 => 128
+Number of register bits => 0 of 5280 (0 % )
 OB => 2
 ################### End Area Report ##################
 Number of odd-length carry chains : 0
@@ -264,23 +282,13 @@ Number of even-length carry chains : 0
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 2
-  Net : clk_c, loads : 0
-  Net : sck_c, loads : 1
+Number of Clocks: 0
 Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : spi/wasdone, loads : 128
-  Net : done_c, loads : 3
-  Net : spi/sck_c_derived_2, loads : 2
-  Net : spi/cyphertextcaptured_126__N_1[1], loads : 2
-  Net : spi/cyphertextcaptured_126__N_1[2], loads : 2
-  Net : spi/cyphertextcaptured_126__N_1[3], loads : 2
-  Net : spi/cyphertextcaptured_126__N_1[4], loads : 2
-  Net : spi/cyphertextcaptured_126__N_1[5], loads : 2
-  Net : spi/cyphertextcaptured_126__N_1[6], loads : 2
-  Net : spi/cyphertextcaptured_126__N_1[7], loads : 2
+  Net : done, loads : 0
+  Net : sdo, loads : 0
 ################### End Clock Report ##################
 
 
@@ -292,13 +300,13 @@ Constraint Summary:
   Total number of constraints dropped: 0
 ###################  End Constraint Report  ######################
 
-Peak Memory Usage: 96 MB
+Peak Memory Usage: 111 MB
 
 --------------------------------------------------------------
 Total CPU Time: 5 secs 
 Total REAL Time: 12 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: b334b03ca9529bfd1c7442ce5d7a8267c9dfb3aa
+Checksum -- synthesis -- netlist: 6df6c826e04debb7bb5ce901851d3c741a942758
 
 
 

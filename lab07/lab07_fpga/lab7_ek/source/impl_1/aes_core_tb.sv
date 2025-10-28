@@ -8,7 +8,7 @@
 // jbrake@hmc.edu
 /////////////////////////////////////////////
 
-module testbench_aes_core();
+module aes_core_tb();
     logic clk, load, done;
     logic [127:0] key, plaintext, cyphertext, expected;
     
