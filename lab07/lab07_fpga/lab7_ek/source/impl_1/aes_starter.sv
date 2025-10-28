@@ -3,12 +3,16 @@
 //   Top level module with SPI interface and SPI core
 /////////////////////////////////////////////
 
-module aes(input  logic clk,
+module aes(// input  logic clk,
            input  logic sck, 
            input  logic sdi,
            output logic sdo,
            input  logic load,
            output logic done);
+		   
+	logic clk;
+	HSOSC #(.CLKHF_DIV("0b11"))
+		hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(clk));
                     
     logic [127:0] key, plaintext, cyphertext;
             
@@ -78,13 +82,13 @@ module aes_core(input  logic         clk,
                 input  logic [127:0] plaintext, 
                 output logic         done, 
                 output logic [127:0] cyphertext);
-	
-	logic [3:0] round;
+				
 	logic reset;
 	logic incrementRound;
 	logic keyUpdate;
-	logic [3:0] operation;
-	logic [127:0] sb_output, sr_output, mc_output, prev_key, current_key, cypher_mid;
+	logic [3:0] operation, round;
+	logic [127:0] sb_output, sr_output, mc_output, current_key, cypher_mid;
+	logic [127:0] prev_key;
 
 	CIPHER pc(round, reset, clk, load, done, incrementRound, keyUpdate, operation);
 	SUBBYTES sb(cypher_mid, clk, sb_output);
@@ -92,48 +96,60 @@ module aes_core(input  logic         clk,
 	mixcolumns mc(cypher_mid, mc_output);
 	keyexpansion ke(prev_key, round, clk, current_key);
 	
-	typedef enum logic [2:0] {waiting, go, finished} statetype;
-	statetype state, nextstate;	
-	
+	// Flip flop with enable for updating the key 
 	always_ff @(posedge clk) 
-		if (~reset) state <= waiting;
-		else state <= nextstate;
+		if (~reset) prev_key <= key;
+		else if (keyUpdate) prev_key <= current_key;
+		else prev_key <= prev_key;
 			
+	// Flip flop with many enables for updating the current state (cypher-mid)
+	always_ff @(posedge clk)
+		if (~reset) cypher_mid <= plaintext;
+		else begin
+			if (operation[0]) cypher_mid <= cypher_mid ^ current_key; // Add Round Key
+			else if (operation[1]) cypher_mid <= sb_output;           // Sub Bytes 
+			else if (operation[2]) cypher_mid <= sr_output; 		  // Shift Rows Output
+			else if (operation[3]) cypher_mid <= mc_output; 		  // Mix Columns
+			else 				   cypher_mid <= cypher_mid;
+		end
+	
+	// Flip flop with enable for updating cyphertext if done
+	always_ff @(posedge clk)
+		if (~done) cyphertext <= cypher_mid;
+			
+	typedef enum logic [2:0] {waiting, work, finished} statetype;
+	statetype state, nextstate;
+	
+	// Round counter
+	always_ff @(posedge clk) begin
+		if (reset == 0) round <= 0;
+		else begin
+			if (incrementRound) round <= round + 4'b1;
+			else round <= round;
+		end
+	end
+
+	// FSM for updating reset
+	always_ff @(posedge clk)
+		state <= nextstate;
+			
+	// Next state logic	
 	always_comb 
 		case(state)
-			waiting:     if (load) nextstate = go;
-						 else 	   nextstate = waiting;
-			go: 		 if (done) nextstate = finished;
-						 else      nextstate = go;
-			finished: 	 nextstate = waiting;
-			default: 	 nextstate = waiting;
-		endcase
-		
-	// output logic
+			waiting: if (load) nextstate = waiting;
+					 else      nextstate = work;
+			work:    if (done) nextstate = finished;
+					 else      nextstate = work;
+			finished: if (load) nextstate = waiting;
+					  else 		nextstate = finished;
+			default: nextstate = waiting;
+		endcase 
+	
+	// Output logic
 	always_comb begin
 		reset = ~(state == waiting);
-		if (waiting) begin
-			prev_key = key;
-			cypher_mid = plaintext;
-			round = 0;
-		end
-		else begin
-			reset = 0;
-			if (keyUpdate)         prev_key = current_key;
-			else		   		   prev_key = prev_key;
-			if (incrementRound)    round = round + 4'b1;
-			else 				   round = round;
-			if (operation[0]) 	   cypher_mid = (cypher_mid ^ current_key);
-			else if (operation[1]) cypher_mid = sb_output;
-			else if (operation[2]) cypher_mid = sr_output;
-			else if (operation[3]) cypher_mid = mc_output;
-			else 				   cypher_mid = cypher_mid;
-		end
-		if (done) cyphertext = cypher_mid;
-		else cyphertext = 127'h0;	
-	end	
-
-    
+	end
+		    
     
 endmodule
 

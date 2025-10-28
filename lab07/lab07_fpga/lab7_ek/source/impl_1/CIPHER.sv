@@ -5,18 +5,19 @@ module CIPHER(input logic [3:0] round,
 			  output logic incrementRound,
 			  output logic keyUpdate,
 			  output logic [3:0] operation);
+	
 			  
 	typedef enum logic [4:0] {start, addRoundKey, updateRound, updateKey, hold, subBytes, shiftRows, mixColumns, done} statetype;
 	statetype state, nextstate;
 	
 	always_ff @(posedge clk)
-		if (~reset) state <= start;
-		else state <= nextstate;
+		//if (~reset) state <= start;
+		state <= nextstate;
 			
 	// Next state logic 
 	always_comb
 		case(state)
-			start:			if (load)			nextstate = addRoundKey;
+			start:			if (~load)			nextstate = addRoundKey;
 							else 				nextstate = start;
 			addRoundKey:						nextstate = updateKey;
 			updateKey: 	    if (round == 4'd10) nextstate = done;
@@ -27,6 +28,8 @@ module CIPHER(input logic [3:0] round,
 			shiftRows: 		if (round == 4'd10) nextstate = addRoundKey;
 							else 				nextstate = mixColumns;
 			mixColumns:							nextstate = addRoundKey;
+			done: 			if (load)			nextstate = start;
+							else				nextstate = done;
 			default: 							nextstate = start;
 		endcase
 		

@@ -16,10 +16,15 @@ module keyexpansion(input logic [127:0]  prev_key,
 	logic [31:0] subword;
 	sbox_sync sb[3:0](rotword, clk, subword);
 	
-	assign new_key[127:96] = prev_key[127:96] ^ (subword ^ rconi);
-	assign new_key[95:64] = prev_key[95:64] ^ (prev_key[127:96] ^ (subword ^ rconi));
-	assign new_key[63:32] = prev_key[63:32] ^ (prev_key[95:64] ^ (prev_key[127:96] ^ (subword ^ rconi)));
-	assign new_key[31:0] = prev_key[31:0] ^ (prev_key[63:32] ^ (prev_key[95:64] ^ (prev_key[127:96] ^ (subword ^ rconi))));
+	always_comb begin
+		if (round == 0) new_key = prev_key;
+		else begin
+			new_key[127:96] = prev_key[127:96] ^ (subword ^ rconi);
+			new_key[95:64] = prev_key[95:64] ^ (prev_key[127:96] ^ (subword ^ rconi));
+			new_key[63:32] = prev_key[63:32] ^ (prev_key[95:64] ^ (prev_key[127:96] ^ (subword ^ rconi)));
+			new_key[31:0] = prev_key[31:0] ^ (prev_key[63:32] ^ (prev_key[95:64] ^ (prev_key[127:96] ^ (subword ^ rconi))));
+		end
+	end
 
 endmodule
 			
